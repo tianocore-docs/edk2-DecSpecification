@@ -29,7 +29,7 @@
 
 -->
 
-![](media/Tianocore_logo2.png)
+![](media/TianocoreTitlePageLogo.jpg)
 
 # EDK II Package Declaration (DEC) File Format Specification {#edk-ii-package-declaration-dec-file-format-specification}
 
