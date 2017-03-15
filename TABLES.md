@@ -29,7 +29,7 @@
 
 -->
 
-# Tables
+### Tables
 
 * [Table 1 MACRO Usages](3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.md#table-1-macro-usages)
 * [Table 2 EDK II Module Types](appendix_b_edk_ii_module_types.md#table-2-edk-ii-module-types)

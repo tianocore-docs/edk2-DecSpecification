@@ -31,13 +31,22 @@
 
 ![](media/TianocoreTitlePageLogo.jpg)
 
-# EDK II Package Declaration (DEC) File Format Specification {#edk-ii-package-declaration-dec-file-format-specification}
+### {{ book.title }}
 
-** Revision 1.26 Draft for Review **
+{% if book.draft %}
+** DRAFT FOR REVIEW **
+{% else %}
+** {{ book.version }} **
+{% endif %}
 
-** March 2017 **
+** {{ gitbook.time|date('MM/DD/YYYY hh:mm:ss') }} **
 
-# Acknowledgements
+{% if book.udkrelease %}
+** {{ book.udkrelease }} **
+{% endif %}
+
+
+### Acknowledgements
 
 Redistribution and use in source (original document form) and 'compiled'
 forms (converted to PDF, epub, HTML and other formats) with or without
@@ -65,7 +74,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Copyright (c) 2007-2017, Intel Corporation. All rights reserved.
 
-# Revision History
+### Revision History
 
 | Revision   | Revision History                                                                                                          | Date            |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------- | --------------- |
