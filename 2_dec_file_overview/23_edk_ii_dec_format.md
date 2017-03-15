@@ -1,5 +1,5 @@
 <!--- @file
-  2.2 Declaration File Format
+  2.3 EDK II DEC Format
 
   Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
 
