@@ -1,13 +1,10 @@
 {
-  "plugins": [
-      "viz.js"
-  ],
-  
-  "pluginsConfig": {},
-  
   "variables" : {
     "draft"   : "yes",
     "title"   : "EDK II Package Declaration (DEC) File Format Specification",
     "version" : "Revision 1.26"
-  }
+  },
+
+  "plugins": ["puml"],
+  "pluginsConfig": {}
 }
