@@ -29,7 +29,7 @@
 
 -->
 
-![](media/TianocoreTitlePageLogo.jpg)
+<img src="media/TianocoreTitlePageLogo.jpg" width="300" />
 
 ### {{ book.title }}
 
