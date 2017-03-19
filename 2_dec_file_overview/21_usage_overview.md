@@ -29,7 +29,7 @@
 
 -->
 
-## 2.1 Usage Overview {#2-1-usage-overview}
+## 2.1 Usage Overview
 
 The DEC file supports EDK II module builds. The file is used to define specific
 information that will be shared between different EDK II Modules. There are

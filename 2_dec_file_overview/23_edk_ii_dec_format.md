@@ -29,7 +29,7 @@
 
 -->
 
-## 2.3 EDK II DEC Format {#2-3-edk-ii-dec-format}
+## 2.3 EDK II DEC Format
 
 EDK II DEC files can be created by package installation tools using the UEFI
 Distribution Package description files that accompany a distribution package.

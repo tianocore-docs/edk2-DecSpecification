@@ -29,7 +29,7 @@
 
 -->
 
-## 2.10 PCD Usage {#2-10-pcd-usage}
+## 2.10 PCD Usage
 
 These are optional sections.
 

@@ -29,7 +29,7 @@
 
 -->
 
-# 2 DEC File Overview {#2-dec-file-overview}
+# 2 DEC File Overview
 
 This document describes the format of EDK II package declaration (DEC) files.
 The DEC files are used by the EDK II utilities that parse EDK II DSC and EDK II

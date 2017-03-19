@@ -29,7 +29,7 @@
 
 -->
 
-## 3.8 [PPIs] Sections {#3-8-ppis-sections}
+## 3.8 [PPIs] Sections
 
 These sections are optional.
 

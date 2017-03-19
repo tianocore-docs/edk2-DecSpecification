@@ -29,7 +29,7 @@
 
 -->
 
-## 1.2 Terms {#1-2-terms}
+## 1.2 Terms
 
 **BaseTools**
 
@@ -57,8 +57,6 @@ provided in the package. An EDK II package is a collection of like content.
 **DEPEX**
 
 Module dependency expressions that describe runtime process restrictions.
-
-January 2016
 
 **Dist**
 

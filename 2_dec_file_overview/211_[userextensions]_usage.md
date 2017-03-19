@@ -29,7 +29,7 @@
 
 -->
 
-## 2.11 [UserExtensions] Usage {#2-11-userextensions-usage}
+## 2.11 [UserExtensions] Usage
 
 This is an optional section.
 
@@ -51,7 +51,7 @@ The following is an example of a User Extensions section.
    NoSuch.bat
 ```
 
-### 2.11.1 [UserExtensions.TianoCore."ExtraFiles"] Section {#2-11-1-userextensions-tianocore-extrafiles-section}
+### 2.11.1 [UserExtensions.TianoCore."ExtraFiles"] Section
 
 The EDK II `[UserExtensions.TianoCore."ExtraFiles"]` section allow for
 distributing extraneous files that are associated with a package. Files listed

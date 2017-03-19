@@ -29,7 +29,7 @@
 
 -->
 
-## 3.11 [UserExtensions] Sections {#3-11-userextensions-sections}
+## 3.11 [UserExtensions] Sections
 
 These sections are optional.
 
@@ -79,7 +79,7 @@ start with a letter.
 
 `[UserExtensions.NoSuchCorp."MyScript_1"] MyBatch.bat`
 
-### 3.11.1 [UserExtensions.TianoCore."ExtraFiles"] Section {#3-11-1-userextensions-tianocore-extrafiles-section}
+### 3.11.1 [UserExtensions.TianoCore."ExtraFiles"] Section
 
 This is an optional section.
 

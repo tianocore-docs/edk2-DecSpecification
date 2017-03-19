@@ -29,7 +29,7 @@
 
 -->
 
-## 1.4 Target Audience {#1-4-target-audience}
+## 1.4 Target Audience
 
 This document is intended for persons doing EFI development and support for
 different platforms, as well as development and support for distributable

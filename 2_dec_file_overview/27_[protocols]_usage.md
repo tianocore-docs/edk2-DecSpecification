@@ -29,7 +29,7 @@
 
 -->
 
-## 2.7 [Protocols] Usage {#2-7-protocols-usage}
+## 2.7 [Protocols] Usage
 
 This is an optional section.
 

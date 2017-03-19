@@ -29,7 +29,7 @@
 
 -->
 
-## A.1 EDK II IntelFrameworkPkg Example {#a-1-edk-ii-intelframeworkpkg-example}
+## A.1 EDK II IntelFrameworkPkg Example
 
 ```ini
 ## @file

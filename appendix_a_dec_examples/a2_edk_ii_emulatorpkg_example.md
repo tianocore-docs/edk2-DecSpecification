@@ -29,7 +29,7 @@
 
 -->
 
-## A.2 EDK II EmulatorPkg Example {#a-2-edk-ii-emulatorpkg-example}
+## A.2 EDK II EmulatorPkg Example
 
 ```ini
 ## @file

@@ -29,7 +29,7 @@
 
 -->
 
-## 3.1 General Rules {#3-1-general-rules}
+## 3.1 General Rules
 
 The general rules for EDK II INI style documents follow.
 
@@ -79,25 +79,21 @@ character. This notation for a PCD name is used to uniquely identify the PCD._
   specified in the entry may be ignored. For example, 0x00000000000000000000001
   can be a valid value for a `UINT8` data type, as the actual value is 1.
 
-### 3.1.1 Backslash {#3-1-1-backslash}
+### 3.1.1 Backslash
 
 The backslash "`\`" character is used in this document when an example entry
 cannot fit between the margins of this file. It must not be used in the DEC
 file to extend an entry.
 
-### 3.1.2 White space characters {#3-1-2-white-space-characters}
+### 3.1.2 White space characters
 
 Whitespace (space and tab) characters are permitted between token and field
-separator
-
-January 2016
-
-elements for all entries.
+separator elements for all entries.
 
 Whitespace characters are not permitted between the PcdTokenSpaceGuidCName and
 the dot, nor are they permitted between the dot and the PcdCName.
 
-### 3.1.3 Paths for filenames {#3-1-3-paths-for-filenames}
+### 3.1.3 Paths for filenames
 
 Note that for specifying the path for a file name, if the path value starts
 with a dollar sign "$" character, a local MACRO is being specified. White space

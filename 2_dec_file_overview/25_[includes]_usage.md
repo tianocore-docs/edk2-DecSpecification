@@ -29,7 +29,7 @@
 
 -->
 
-## 2.5 [Includes] Usage {#2-5-includes-usage}
+## 2.5 [Includes] Usage
 
 This is an optional section.
 

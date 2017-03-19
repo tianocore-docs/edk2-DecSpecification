@@ -29,7 +29,7 @@
 
 -->
 
-## 3.3 Header Comment Section {#3-3-header-comment-section}
+## 3.3 Header Comment Section
 
 This is an optional section for EDK II packages that will not be distributed
 using tools that create UEFI Distribution Packages. It is required for EDK II

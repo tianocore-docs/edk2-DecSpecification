@@ -29,7 +29,7 @@
 
 -->
 
-## A.3 ShellBinPkg.dec {#a-3-shellbinpkg-dec}
+## A.3 ShellBinPkg.dec
 
 The following is an example of a DEC file where only binary modules are
 provided; no libraries or source code is present in the package's directory

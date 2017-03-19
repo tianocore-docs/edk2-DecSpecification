@@ -29,7 +29,7 @@
 
 -->
 
-## 2.6 [Guids] Usage {#2-6-guids-usage}
+## 2.6 [Guids] Usage
 
 This is an optional section.
 

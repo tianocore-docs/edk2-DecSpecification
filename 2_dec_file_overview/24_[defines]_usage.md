@@ -29,7 +29,7 @@
 
 -->
 
-## 2.4 [Defines] Usage {#2-4-defines-usage}
+## 2.4 [Defines] Usage
 
 This is a required section.
 

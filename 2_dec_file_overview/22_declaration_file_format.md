@@ -29,11 +29,11 @@
 
 -->
 
-## 2.2 Declaration File Format {#2-2-declaration-file-format}
+## 2.2 Declaration File Format
 
 This section covers the content for the EDK II DEC files.
 
-### 2.2.1 Section Entries {#2-2-1-section-entries}
+### 2.2.1 Section Entries
 
 To simplify parsing, the EDK II meta-data files continue using the INI format.
 This style was introduced for EDK meta-data files, when only the Windows tool
@@ -116,7 +116,7 @@ When building the module for X64, the source files will logically be:
 The `[Defines]` section tag prohibits use of architectural modifiers. All other
 sections can specify architectural modifiers.
 
-### 2.2.2 Comments {#2-2-2-comments}
+### 2.2.2 Comments
 
 The hash `#` character indicates comments in the Declaration (DEC) file. In
 line comments terminate the processing of a line. In line comments must be
@@ -225,7 +225,7 @@ header file, so the general format is:
   gEfiTModPkgTokenSpaceGuid.PcdS3AcpiReservedMemorySize |0x8000 | UINT32 | 0x30000007
 ```
 
-### 2.2.3 Valid Entries {#2-2-3-valid-entries}
+### 2.2.3 Valid Entries
 
 Processing of the line is terminated if a comment is encountered or by the end
 of the line. Entries in this file (not comments) are not allowed to span
@@ -250,7 +250,7 @@ finally the two results are added.
 
 Space and tab characters are permitted around field separators.
 
-### 2.2.4 Naming Conventions {#2-2-4-naming-conventions}
+### 2.2.4 Naming Conventions
 
 The EDK II build infrastructure is supported under Microsoft* Windows*, Linux*
 and MAC OS/X* operating systems. As a result of multiple environment support,
@@ -328,11 +328,11 @@ Absolute paths or relative paths outside of the directory the DEC file resides
 must not be used when specifying directories or filenames in any section of the
 DEC file.
 
-### 2.2.5 !include Statements {#2-2-5-include-statements}
+### 2.2.5 !include Statements
 
 The `!include` statement is NOT permitted in DEC files.
 
-### 2.2.6 Macro Statements {#2-2-6-macro-statements}
+### 2.2.6 Macro Statements
 
 Macro statements are permitted in the EDK II DEC files. Macro statements assign
 a Value to a Variable Name, and are only valid during the processing of the DEC
@@ -392,7 +392,7 @@ In the previous example, the directory and filename for a library instance is
 the header file that can be used for all modules that provide the library
 implementations that conform to the definitions in the file.
 
-### 2.2.7 PCD Names {#2-2-7-pcd-names}
+### 2.2.7 PCD Names
 
 Unique PCD names are defined as PCD Token Space Guid C name and the PCD C name
 separated by a period "." character:
@@ -403,6 +403,6 @@ The PCD's Name `(PcdName)` is defined as PCD Token Space Guid C name and the
 PCD C name separated by a period "`.`" character. PCD C names are used in C
 code and must follow the C variable name rule.
 
-### 2.2.8 Conditional Directive Statements (!if...) {#2-2-8-conditional-directive-statements-if}
+### 2.2.8 Conditional Directive Statements (!if...)
 
 Conditional statements are NOT permitted in EDK II DEC files.

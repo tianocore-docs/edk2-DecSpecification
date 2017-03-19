@@ -29,7 +29,7 @@
 
 -->
 
-## 1.1 Overview {#1-1-overview}
+## 1.1 Overview
 
 This document describes the format for DEC files with the following goals:
 

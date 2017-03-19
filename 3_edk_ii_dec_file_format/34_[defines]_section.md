@@ -29,7 +29,7 @@
 
 -->
 
-## 3.4 [Defines] Section {#3-4-defines-section}
+## 3.4 [Defines] Section
 
 This section is required.
 

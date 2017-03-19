@@ -29,7 +29,7 @@
 
 -->
 
-# Appendix A DEC Examples {#appendix-a-dec-examples}
+# Appendix A DEC Examples
 
 The following are examples of EDK II package declaration (DEC) files. Line
 extension characters are not permitted in the DEC file, they are used here for

@@ -29,7 +29,7 @@
 
 -->
 
-## 3.2 Package Declaration (DEC) Definitions {#3-2-package-declaration-dec-definitions}
+## 3.2 Package Declaration (DEC) Definitions
 
 This section defines content and format of a package declaration file. The
 `[Defines]` section must appear before any other section except the `<Header>`
@@ -54,7 +54,7 @@ EBNF).
                  <UserExtensions>*
 ```
 
-### 3.2.1 Common Definitions {#3-2-1-common-definitions}
+### 3.2.1 Common Definitions
 
 #### Summary
 
@@ -283,7 +283,7 @@ The DOS End Of Line: "0x0D 0x0A" character sequence must be used for all EDK II
 meta-data files. All *Nix based tools can properly process the DOS EOL
 characters. Microsoft based tools cannot process the *Nix style EOL characters.
 
-### 3.2.2 MACROs {#3-2-2-macros}
+### 3.2.2 MACROs
 
 Use of MACRO statements is optional.
 
@@ -334,7 +334,7 @@ DEFINE PROTO_HDRS = $(LIB)/Protocol
 Any part of the path line can be replaced by a MACRO as shown in the following
 table.
 
-##### Table 1 MACRO Usages{#table-1-macro-usages}
+###### Table 1 MACRO Usages
 
 | MACRO DEFINITION                        | MACRO USAGE                 |
 | --------------------------------------- | --------------------------- |
@@ -344,15 +344,15 @@ table.
 | DEFINE MY_MACRO = test3                 | test1/test2/$(MY_MACRO).inf |
 | DEFINE MY_MACRO = test1/test2/test3.inf | $(MY_MACRO)                 |
 
-### 3.2.3 Conditional Statements {#3-2-3-conditional-statements}
+### 3.2.3 Conditional Statements
 
 The conditional statements are not permitted anywhere within the DEC file.
 
-### 3.2.4 !include Statement {#3-2-4-include-statement}
+### 3.2.4 !include Statement
 
 The !include statement is not permitted in an EDK II DEC file.
 
-### 3.2.5 Special Comment Blocks {#3-2-5-special-comment-blocks}
+### 3.2.5 Special Comment Blocks
 
 This section defines special format comment blocks that contain information
 about this package. These command blocks are not required.

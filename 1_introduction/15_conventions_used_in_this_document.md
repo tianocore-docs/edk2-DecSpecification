@@ -29,11 +29,11 @@
 
 -->
 
-## 1.5 Conventions Used in this Document {#1-5-conventions-used-in-this-document}
+## 1.5 Conventions Used in this Document
 
 This document uses typographic and illustrative conventions described below.
 
-### 1.5.1 Data Structure Descriptions {#1-5-1-data-structure-descriptions}
+### 1.5.1 Data Structure Descriptions
 
 Intel(R) processors based on 32 bit Intel(R) architecture (IA 32) are "little
 endian" machines. This distinction means that the low-order byte of a multi
@@ -62,7 +62,7 @@ An EBNF-type declaration for the data structure.
 
 Sample data structure using the prototype.
 
-### 1.5.2 Pseudo-Code Conventions {#1-5-2-pseudo-code-conventions}
+### 1.5.2 Pseudo-Code Conventions
 
 Pseudo code is presented to describe algorithms in a more concise form. None of
 the algorithms in this document are intended to be compiled directly. The code
@@ -77,7 +77,7 @@ appropriate. The coding style, particularly the indentation style, is used for
 readability and does not necessarily comply with an implementation of the
 _Extensible Firmware Specification_.
 
-### 1.5.3 Typographic Conventions {#1-5-3-typographic-conventions}
+### 1.5.3 Typographic Conventions
 
 This document uses the typographic and illustrative conventions described below:
 

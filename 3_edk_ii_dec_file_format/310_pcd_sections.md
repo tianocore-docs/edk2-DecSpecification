@@ -29,7 +29,7 @@
 
 -->
 
-## 3.10 PCD Sections {#3-10-pcd-sections}
+## 3.10 PCD Sections
 
 These are optional sections. However, if modules in this package's directory
 tree use a PCD that is not declared in other DEC files, then the package

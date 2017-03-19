@@ -29,7 +29,7 @@
 
 -->
 
-## 3.6 [Guids] Sections {#3-6-guids-sections}
+## 3.6 [Guids] Sections
 
 These sections are optional.
 

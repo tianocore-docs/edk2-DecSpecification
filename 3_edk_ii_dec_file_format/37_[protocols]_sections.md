@@ -29,7 +29,7 @@
 
 -->
 
-## 3.7 [Protocols] Sections {#3-7-protocols-sections}
+## 3.7 [Protocols] Sections
 
 These sections are optional.
 

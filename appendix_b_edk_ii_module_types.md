@@ -29,9 +29,9 @@
 
 -->
 
-# Appendix B EDK II Module Types {#appendix-b-edk-ii-module-types}
+# Appendix B EDK II Module Types
 
-##### Table 2 EDK II Module Types{#table-2-edk-ii-module-types}
+###### Table 2 EDK II Module Types
 
 | MODULE_TYPE        | Supported Architecture Types | Description                                                                                                                                                                                                                                                            |
 | ------------------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

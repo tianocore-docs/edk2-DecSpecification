@@ -29,7 +29,7 @@
 
 -->
 
-# 1 Introduction {#1-introduction}
+# 1 Introduction
 
 This document describes the EDK II Declaration (DEC) file format. This format
 was designed to support building packaging and distribution of EDK II modules,

@@ -29,7 +29,7 @@
 
 -->
 
-## 3.9 [LibraryClasses] Sections {#3-9-libraryclasses-sections}
+## 3.9 [LibraryClasses] Sections
 
 These sections are optional.
 

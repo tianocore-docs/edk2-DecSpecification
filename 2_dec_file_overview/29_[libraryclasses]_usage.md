@@ -29,7 +29,7 @@
 
 -->
 
-## 2.9 [LibraryClasses] Usage {#2-9-libraryclasses-usage}
+## 2.9 [LibraryClasses] Usage
 
 This is an optional section.
 

@@ -29,7 +29,7 @@
 
 -->
 
-## 1.3 Related Information {#1-3-related-information}
+## 1.3 Related Information
 
 The following publications and sources of information may be useful to you or
 are referred to by this specification:

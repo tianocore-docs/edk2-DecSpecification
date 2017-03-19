@@ -29,7 +29,7 @@
 
 -->
 
-# 3 EDK II DEC File Format {#3-edk-ii-dec-file-format}
+# 3 EDK II DEC File Format
 
 This section of the document describes the EDK II DEC sections using an
 Extended Backus-Naur Form.

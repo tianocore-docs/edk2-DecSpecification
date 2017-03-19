@@ -29,7 +29,7 @@
 
 -->
 
-## 3.5 [Includes] Sections {#3-5-includes-sections}
+## 3.5 [Includes] Sections
 
 These sections are optional.
 

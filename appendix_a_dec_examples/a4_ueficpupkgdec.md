@@ -29,7 +29,7 @@
 
 -->
 
-## A.4 UefiCpuPkg.dec {#a-4-ueficpupkg-dec}
+## A.4 UefiCpuPkg.dec
 
 ```ini
 ### @file UefiCpuPkg.dec
