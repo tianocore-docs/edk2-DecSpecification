@@ -66,7 +66,7 @@ The following is an example of this section.
 
 ```ini
 [Defines]
-  DEC_SPECIFICATION = 0x00010019
+  DEC_SPECIFICATION = 0x0001001A
   PACKAGE_NAME      = MdePkg
   PACKAGE_GUID      = 1E73767F-8F52-4603-AEB4-F29B510B6766
   PACKAGE_VERSION   = 1.02

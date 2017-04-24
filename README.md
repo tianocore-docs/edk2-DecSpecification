@@ -164,4 +164,5 @@ Copyright (c) 2007-2017, Intel Corporation. All rights reserved.
 |            | packages located outside of the WORKSPACE directory tree (refer to                                                        |                 |
 |            | the TianoCore.org EDKII website for additional instructions on setting                                                    |                 |
 |            | up a development environment).                                                                                            |                 |
-| 1.26       | Reformat for GitBook                                                                                                      | March 2017      |
+| 1.26       | Reformat for GitBook                                                                                                      | April 2017      |
+|            | Updated `DEC_SPECIFICATION` to `0x0001001A` or `1.26`                                                                     |                 |
