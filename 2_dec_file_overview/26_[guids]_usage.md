@@ -35,24 +35,42 @@ This is an optional section.
 
 This section is used to define the GUID Value for Guid C Names.
 
+The section tag modifier, `Private`, is used to restrict the EDK II build
+system by preventing references to content in these sections from being used by
+modules outside of the package.
+
 This section uses one of the following section definitions:
 
 ```ini
 [Guids]
 
+[Guids.common]
+
+[Guids.common.Private]
+
 [Guids.IA32]
+
+[Guids.IA32.Private]
 
 [Guids.X64]
 
+[Guids.X64.Private]
+
 [Guids.IPF]
+
+[Guids.IPF.Private]
 
 [Guids.EBC]
 
-[Guids.common]
+[Guids.EBC.Private]
+```
 
+Architectural sections may also be combined, as in:
+
+```ini
 [Guids.IA32, Guids.X64]
 
-[Guids.X64, Guids.IPF]
+[Guids.IA32.Private, Guids.X64.Private]
 ```
 
 Format for the entries in this section is two fields with an equal "="

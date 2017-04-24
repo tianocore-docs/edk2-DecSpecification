@@ -166,3 +166,4 @@ Copyright (c) 2007-2017, Intel Corporation. All rights reserved.
 |            | up a development environment).                                                                                            |                 |
 | 1.26       | Reformat for GitBook                                                                                                      | April 2017      |
 |            | Updated `DEC_SPECIFICATION` to `0x0001001A` or `1.26`                                                                     |                 |
+|            | [#465](https://bugzilla.tianocore.org/show_bug.cgi?id=465) DEC spec: document private definitions                         |                 |

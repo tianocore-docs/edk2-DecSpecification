@@ -48,23 +48,45 @@ Also included in this section are the directories containing headers that may
 be required for individual EDK II module types. Refer to Appendix, "EDK II
 Module Types", for a list of the valid types.
 
+The section tag modifier, `Private`, is used to restrict the EDK II build
+system by preventing references to content in these sections from being used by
+modules outside of the package.
+
 Refer to the `[Includes]` definition later in this document for a complete
 description of this section and its contents.
 
 The `[Includes]` section uses one of the following section definitions:
 
 ```ini
+[Includes]
+
 [Includes.common]
+
+[Includes.common.Private]
 
 [Includes.IA32]
 
+[Includes.IA32.Private]
+
 [Includes.X64]
+
+[Includes.X64.Private]
 
 [Includes.IPF]
 
+[Includes.IPF.Private]
+
 [includes.EBC]
 
-[Includes]
+[includes.EBC.Private]
+```
+
+Architectural sections may also be combined, as in:
+
+```ini
+[Includes.IA32, Includes.X64]
+
+[Includes.IA32.Private, Includes.X64.Private]
 ```
 
 The format for entries in this section is one field, with an optional comment

@@ -52,9 +52,13 @@ Each PPI entry must be listed only once per section.
 
 ```c
 <Ppis>          ::= "[Ppis" [<com_attribs>] "]" <EOL> <PpiEntries>*
-<com_attribs>   ::= {".common"} {<attribs>}
+<com_attribs>   ::= {<Public>} {<Hidden>}
+<Public>        ::= {".common"} {<attribs>}
+<Hidden>        ::= {".common.Private"} {<hattribs>}
 <attribs>       ::= <attrs> ["," <TS> "Ppis" <attrs>]*
 <attrs>         ::= "." <arch>
+<hattribs>      ::= <hattrs> ["," <TS> "Ppis" <hattrs>]*
+<hattrs>        ::= "." <arch> ".Private"
 <PpiEntries>    ::= [<PpiComment>]
                     <TS> <CName> <Eq> <CFormatGUID> {<CommentBlock>} {<EOL>}
 <PpiComment>    ::= [<Description>]
@@ -80,6 +84,14 @@ It is NOT permissible to list a PPI entry under common and under a specific
 architecture. It is permissible to specify PPI entries under all architectures
 except `"common`" if different Guid values may be required for different
 architectures.
+
+It is NOT permissible to mix section tags without the `Private` modifier with
+section tags with the `Private` modifier. If this condition is detected, the
+build tools must terminate with an error message.
+
+For example, `[Ppis.common, Ppis.IA32.Private]` is prohibited.
+
+#### Example
 
 ```ini
 # Global Ppis Definition section - list of Global Ppis C Name

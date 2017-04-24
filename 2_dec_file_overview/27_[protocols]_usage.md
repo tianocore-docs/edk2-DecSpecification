@@ -35,20 +35,42 @@ This is an optional section.
 
 This section is used to define the GUID Value for Protocol C Names.
 
+The section tag modifier, `Private`, is used to restrict the EDK II build
+system by preventing references to content in these sections from being used by
+modules outside of the package.
+
 This section use ones of the following section definitions:
 
 ```ini
 [Protocols]
 
+[Protocols.common]
+
+[Protocols.common.Private]
+
 [Protocols.IA32]
+
+[Protocols.IA32.Private]
 
 [Protocols.X64]
 
+[Protocols.X64.Private]
+
 [Protocols.IPF]
+
+[Protocols.IPF.Private]
 
 [Protocols.EBC]
 
-[Protocols.common]
+[Protocols.EBC.Private]
+```
+
+Architectural sections may also be combined, as in:
+
+```ini
+[Protocols.IA32, Protocols.X64]
+
+[Protocols.IA32.Private, Protocols.X64.Private]
 ```
 
 Format for the entries in this section is two fields with an equal "="

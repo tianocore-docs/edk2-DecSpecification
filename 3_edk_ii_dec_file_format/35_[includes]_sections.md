@@ -58,9 +58,13 @@ other architecture type modifiers; doing so will result in a build break.
 
 ```c
 <Include>      ::= "[Includes" [<com_attribs>] "]" <EOL> <IncEntries>*
-<com_attribs>  ::= {".common"} {<attribs>}
+<com_attribs>  ::= {<Public>} {<Hidden>}
+<Public>       ::= {".common"} {<attribs>}
+<Hidden>       ::= {".common.Private"} {<hattribs>}
 <attribs>      ::= <attrs> ["," <TS> "Includes" <attrs>]*
 <attrs>        ::= "." <arch>
+<hattribs>     ::= <hattrs> ["," <TS> "includes" <hattrs>]*
+<hattrs>       ::= "." <arch> ".Private"
 <IncEntries>   ::= {<MacroDefinition>} {<HdrFile>}
 <HdrFile>      ::= <CommentBlock>*
                    <TS> <PATH>
@@ -83,6 +87,14 @@ It is NOT permissible to list an include directory under common and under a
 specific architecture. It is permissible to specify include directory entries
 under all architectures except `"common`" if different include directories are
 required for different architectures.
+
+It is NOT permissible to mix section tags without the `Private` modifier with
+section tags with the `Private` modifier. If this condition is detected, the
+build tools must terminate with an error message.
+
+For example, `[Includes.common, Includes.IA32.Private]` is prohibited.
+
+#### Example
 
 ```ini
 # Include section - list of Include Paths relative to the DEC file that

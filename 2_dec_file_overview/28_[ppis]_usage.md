@@ -35,20 +35,42 @@ This is an optional section.
 
 This section is used to define the GUID Value for PPI C Names.
 
+The section tag modifier, `Private`, is used to restrict the EDK II build
+system by preventing references to content in these sections from being used by
+modules outside of the package.
+
 This section use ones of the following section definitions:
 
 ```ini
 [Ppis]
 
+[Ppis.common]
+
+[Ppis.common.Private]
+
 [Ppis.IA32]
+
+[Ppis.IA32.Private]
 
 [Ppis.X64]
 
+[Ppis.X64.Private]
+
 [Ppis.IPF]
+
+[Ppis.IPF.Private]
 
 [Ppis.EBC]
 
-[Ppis.common]
+[Ppis.EBC.Private]
+```
+
+Architectural sections may also be combined, as in:
+
+```ini
+[Ppis.IA32, Ppis.X64]
+
+[Ppis.IA32.Private, Ppis.X64.Private]
 ```
 
 Format for the entries in this section is two fields with an equal "="

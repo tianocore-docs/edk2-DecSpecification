@@ -51,9 +51,13 @@ Each GUID entry must be listed only once per section.
 
 ```c
 <Guids>          ::= "[Guids" [<com_attribs>] "]" <EOL> <GuidEntries>*
-<com_attribs>    ::= {".common"} {<attribs>}
+<com_attribs>    ::= {<Public>} {<Hidden>}
+<Public>         ::= {".common"} {<attribs>}
+<Hidden>         ::= {".common.Private"} {<hattribs>}
 <attribs>        ::= <attrs> ["," <TS> "Guids" <attrs>]*
 <attrs>          ::= "." <arch>
+<hattribs>       ::= <hattrs> ["," <TS> "Guids" <hattrs>]*
+<hattrs>         ::= "." <arch> ".Private"
 <GuidEntries>    ::= [<GuidComment>]
                      <TS> <CName> <Eq> <CFormatGUID> {<CommentBlock>} {<EOL>}
 <GuidComment>    ::= [<Description>]
@@ -80,6 +84,14 @@ It is not permissible to list a GUID entry under common and under a specific
 architecture. It is permissible to specify GUID entries under all architectures
 except `"common`" if different GUID values may be required for different
 architectures.
+
+It is NOT permissible to mix section tags without the `Private` modifier with
+section tags with the `Private` modifier. If this condition is detected, the
+build tools must terminate with an error message.
+
+For example, `[Guids.common, Guids.IA32.Private]` is prohibited.
+
+#### Example
 
 ```ini
 # Global Guid Definition section - list of Global Guid C Name
