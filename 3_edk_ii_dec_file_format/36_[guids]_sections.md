@@ -91,6 +91,21 @@ build tools must terminate with an error message.
 
 For example, `[Guids.common, Guids.IA32.Private]` is prohibited.
 
+It is NOT permissible for the same GUID to be listed in section tags with and
+without the `Private` modifier. If this condition is detected, the build tools
+must terminate with an error message.
+
+For example, the following is prohibited because the GUID named `MyPrivateGuid`
+is listed in a tag with and without a `Private` modifier.
+
+```
+[Guids]
+  MyPrivateGuid = { 0x1e96808b, 0xfa93, 0x4230, { 0xb5, 0x6b, 0x96, 0xc5, 0x95, 0x9b, 0xd1, 0xd2 }}
+
+[Guids.common.Private]
+  MyPrivateGuid = { 0x1e96808b, 0xfa93, 0x4230, { 0xb5, 0x6b, 0x96, 0xc5, 0x95, 0x9b, 0xd1, 0xd2 }}
+```
+
 #### Example
 
 ```ini

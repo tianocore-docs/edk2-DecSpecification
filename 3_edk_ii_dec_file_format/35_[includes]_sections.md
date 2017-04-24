@@ -94,6 +94,22 @@ build tools must terminate with an error message.
 
 For example, `[Includes.common, Includes.IA32.Private]` is prohibited.
 
+It is NOT permissible for the same include directory to be listed in section
+tags with and without the `Private` modifier. If this condition is detected,
+the build tools must terminate with an error message.
+
+For example, the following is prohibited because the same directory called
+`MyPrivateIncludePath` is listed in a tag with and without a `Private`
+modifier.
+
+```
+[Includes]
+  MyPrivateIncludePath
+
+[Includes.common.Private]
+  MyPrivateIncludePath
+```
+
 #### Example
 
 ```ini

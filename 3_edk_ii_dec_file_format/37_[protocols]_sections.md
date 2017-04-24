@@ -90,6 +90,21 @@ build tools must terminate with an error message.
 
 For example, `[Protocols.common, Protocols.IA32.Private]` is prohibited.
 
+It is NOT permissible for the same protocol to be listed in section tags with
+and without the `Private` modifier. If this condition is detected, the build
+tools must terminate with an error message.
+
+For example, the following is prohibited because the protocol named
+`MyPrivateProtocol` is listed in a tag with and without a `Private` modifier.
+
+```
+[Protocols]
+  MyPrivateProtocol = { 0xc7c4a20f, 0xd1d1, 0x427a, { 0xb0, 0x82, 0xa8, 0xb6, 0x24, 0xf7, 0x69, 0x4f }}
+
+[Protocols.common.Private]
+  MyPrivateProtocol = { 0xc7c4a20f, 0xd1d1, 0x427a, { 0xb0, 0x82, 0xa8, 0xb6, 0x24, 0xf7, 0x69, 0x4f }}
+```
+
 #### Example
 
 ```ini

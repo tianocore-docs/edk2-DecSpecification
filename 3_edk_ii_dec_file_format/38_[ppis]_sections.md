@@ -91,6 +91,21 @@ build tools must terminate with an error message.
 
 For example, `[Ppis.common, Ppis.IA32.Private]` is prohibited.
 
+It is NOT permissible for the same PPI to be listed in section tags with and
+without the `Private` modifier. If this condition is detected, the build tools
+must terminate with an error message.
+
+For example, the following is prohibited because the PPI named `MyPrivatePpi`
+is listed in a tag with and without a `Private` modifier.
+
+```
+[Ppis]
+  MyPrivatePpi = { 0x10ed6a18, 0xbbf7, 0x4051, { 0xba, 0xb8, 0xb4, 0x90, 0x1a, 0x65, 0xa2, 0xc5 }}
+
+[Ppis.common.Private]
+  MyPrivatePpi = { 0x10ed6a18, 0xbbf7, 0x4051, { 0xba, 0xb8, 0xb4, 0x90, 0x1a, 0x65, 0xa2, 0xc5 }}
+```
+
 #### Example
 
 ```ini
