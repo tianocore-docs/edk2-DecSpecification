@@ -1,7 +1,7 @@
 <!--- @file
   2.10 PCD Usage
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -63,6 +63,9 @@ specification. Only PCDs that will be shared between multiple users need to be
 defined in published architectural specs. If a PCD is only going to be used by
 a single organization, then a new PCD can be created within the organization,
 keeping all modules that use the PCD internal to the organization.
+
+PCDs are defined with C structure type name. It means this PCD has the layout 
+of C strucutre. PCD value can be assigned by its structure field. 
 
 Every PCD (`PcdName`) is identified by a two part definition - the PCD's Token
 Space Guid CName and the PCD CName. These two parts are separated by a period
@@ -159,3 +162,5 @@ based on the greater of the lengths from the values in the DEC, DSC and INF
 files. However, if the platform integrator does not specify a size in the DSC
 file, the data size is calculated by the tools to be the greatest length of all
 values specified for this PCD listed in the DEC, INF, FDF and DSC files.
+
+If PCD is defined with C structure type name, it will also be VOID* PCD.

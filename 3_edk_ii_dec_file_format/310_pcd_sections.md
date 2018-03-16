@@ -1,7 +1,7 @@
 <!--- @file
   3.10 PCD Sections
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -112,7 +112,7 @@ PCDs listed in `PcdsFeatureFlag` sections must only be listed in
 <PcdEntries>      ::= ["##" <TS> <PcdDescription>]
                       [<TS> <Prompt>]
                       [<DoxComment>] <PcdEntry>
-<PcdEntry>        ::= <TS> {<PcdBool>} {<PcdNumEntry>} {<PcdPtr>}
+<PcdEntry>        ::= <TS> {<PcdBool>} {<PcdNumEntry>} {<PcdPtr>} {<PcdStruct>} {<PcdFieldValue>}
 <PcdNumEntry>     ::= {<Pcd8>} {<Pcd16>} {<Pcd32>} {<Pcd64>}
 <PcdBool>         ::= <PcdName> <FS> <BoolPcd> <FS> <Token> <CbOrEol>
 <BoolPcd>         ::= <Boolean> <FS> "BOOLEAN"
@@ -125,6 +125,12 @@ PCDs listed in `PcdsFeatureFlag` sections must only be listed in
 <PcdUint32>       ::= {<NumValUint32>} {<Expression>} <FS> "UINT32"
 <Pcd64>           ::= <PcdName> <FS> <PcdUint64> <FS> <Token> <CbOrEol>
 <PcdUint64>       ::= {<NumValUint64>} {<Expression>} <FS> "UINT64"
+<PcdStruct>       ::= <PcdName> <FS> <PtrVal> <FS> <CName> <FS> <Token> "{" <EOL>
+                      <TS> <PcdStructHF>
+                      <TS> <PcdStructPKGs> "}" <CbOrEol>
+<PcdStructHF>     ::= "<HeaderFile>" <EOL> <PcdStructFile>
+<PcdStructPKGs>   ::= "<Packages>" <EOL> <PcdStructFile>*
+<PcdStructFile>   ::= <Filename> <EOL>
 <PcdPtr>          ::= <PcdName> <FS> <PcdPtrVal> <FS> <Token> <CbOrEol>
 <PcdPtrVal>       ::= <PtrVal> <FS> "VOID*"
 <PtrVal>          ::= {<StringVal>} {<Expression>}

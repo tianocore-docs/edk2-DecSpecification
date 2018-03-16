@@ -1,7 +1,7 @@
 <!--- @file
   3.2 Package Declaration (DEC) Definitions
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -166,8 +166,11 @@ DEC file (for example, `<Expression>` statements are not permitted).
 <MACRO>               ::= (A-Z)(A-Z0-9_)*
 <MACROVAL>            ::= "$(" <MACRO> ")"
 <PcdName>             ::= <TokenSpaceGuidCName> "." <PcdCName>
+<PcdFieldName>        ::= <TokenSpaceGuidCName> "." <PcdCName> "." <Field>
 <PcdCName>            ::= <CName>
 <TokenSpaceGuidCName> ::= <CName>
+<PcdFieldEntry>       ::= <PcdFieldName> <FS> <PcdFieldValue> <EOL>
+<PcdFieldValue>       ::= {<BoolType>} {<NumValUint8>} {<NumValUint16>} {<NumValUint32>} {<NumValUint64>} {<StringVal>} {<MACROVAL>} {<Expression>}
 <UINT8>               ::= {"0x"} {"0X"} (\x0 - \xFF)
 <UINT16>              ::= {"0x"} {"0X"} (\x0 - \xFFFF)
 <UINT32>              ::= {"0x"} {"0X"} (\x0 - \xFFFFFFFF)
