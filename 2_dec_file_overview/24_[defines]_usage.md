@@ -1,7 +1,7 @@
 <!--- @file
   2.4 [Defines] Usage
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -66,7 +66,7 @@ The following is an example of this section.
 
 ```ini
 [Defines]
-  DEC_SPECIFICATION = 0x0001001A
+  DEC_SPECIFICATION = 0x0001001B
   PACKAGE_NAME      = MdePkg
   PACKAGE_GUID      = 1E73767F-8F52-4603-AEB4-F29B510B6766
   PACKAGE_VERSION   = 1.02

@@ -1,7 +1,7 @@
 <!--- @file
   README.md for EDK II Package Declaration (DEC) File Format Specification
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -168,3 +168,6 @@ Copyright (c) 2007-2017, Intel Corporation. All rights reserved.
 |            | Updated `DEC_SPECIFICATION` to `0x0001001A` or `1.26`                                                                                               |                 |
 |            | [#465](https://bugzilla.tianocore.org/show_bug.cgi?id=465) DEC spec: document private definitions                                                   |                 |
 |            | [#482](https://bugzilla.tianocore.org/show_bug.cgi?id=482) DEC Spec: add clarification for [Ppis], [Guids], [Protocols], [Includes] Private support |                 |
+| 1.27       | Update Version to 1.27                                                                                                                              | Mar 2018        |
+|            | Add flexible PCD value format into spec                                                                                                             |                 |
+|            | Add structure PCD definition syntax                                                                                                                 |                 |
