@@ -1,7 +1,7 @@
 <!--- @file
   2.2 Declaration File Format
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -406,3 +406,7 @@ code and must follow the C variable name rule.
 ### 2.2.8 Conditional Directive Statements (!if...)
 
 Conditional statements are NOT permitted in EDK II DEC files.
+
+### 2.2.9 !error Statements
+
+The `!error` statement is NOT permitted in EDK II DEC files.

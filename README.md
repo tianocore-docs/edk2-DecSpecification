@@ -171,3 +171,5 @@ Copyright (c) 2007-2017, Intel Corporation. All rights reserved.
 | 1.27       | Update Version to 1.27                                                                                                                              | Mar 2018        |
 |            | Add flexible PCD value format into spec                                                                                                             |                 |
 |            | Add structure PCD definition syntax                                                                                                                 |                 |
+|            | Add clarification that !error statement is not permitted in DEC file                                                                                |                 |
+ 

@@ -401,7 +401,11 @@ The conditional statements are not permitted anywhere within the DEC file.
 
 The !include statement is not permitted in an EDK II DEC file.
 
-### 3.2.5 Special Comment Blocks
+### 3.2.5 !error Statement
+
+The `!error` statement is not permitted in an EDK II DEC file.
+
+### 3.2.6 Special Comment Blocks
 
 This section defines special format comment blocks that contain information
 about this package. These command blocks are not required.
