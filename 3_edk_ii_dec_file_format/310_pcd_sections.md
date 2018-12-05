@@ -125,7 +125,7 @@ PCDs listed in `PcdsFeatureFlag` sections must only be listed in
 <PcdUint32>       ::= {<NumValUint32>} {<Expression>} <FS> "UINT32"
 <Pcd64>           ::= <PcdName> <FS> <PcdUint64> <FS> <Token> <CbOrEol>
 <PcdUint64>       ::= {<NumValUint64>} {<Expression>} <FS> "UINT64"
-<PcdStruct>       ::= <PcdName> <FS> <PtrVal> <FS> <CName> <FS> <Token> "{" <EOL>
+<PcdStruct>       ::= <PcdName> <FS> <PtrVal> <FS> {<CName>} {<CArrayName>} <FS> <Token> "{" <EOL>
                       <TS> <PcdStructHF>
                       <TS> <PcdStructPKGs> "}" <CbOrEol>
 <PcdStructHF>     ::= "<HeaderFile>" <EOL> <PcdStructFile>

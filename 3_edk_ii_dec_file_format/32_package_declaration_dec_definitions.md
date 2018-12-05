@@ -87,6 +87,7 @@ DEC file (for example, `<Expression>` statements are not permitted).
 <NonDigit>            ::= (a-zA-Z_)
 <Identifier>          ::= <NonDigit> <Chars>*
 <CName>               ::= <Identifier> # A valid C variable name.
+<CArrayName>          ::= <Identifier>["["[<Number>]"]"]+ # A valid C variable array name.
 <AsciiChars>          ::= (0x21 - 0x7E)
 <CChars>              ::= [{0x21} {(0x23 - 0x26)} {(0x28 - 0x5B)}
                           {(0x5D - 0x7E)} {<EscapeSequence>}]*
@@ -166,7 +167,7 @@ DEC file (for example, `<Expression>` statements are not permitted).
 <MACRO>               ::= (A-Z)(A-Z0-9_)*
 <MACROVAL>            ::= "$(" <MACRO> ")"
 <PcdName>             ::= <TokenSpaceGuidCName> "." <PcdCName>
-<PcdFieldName>        ::= <TokenSpaceGuidCName> "." <PcdCName> "." <Field>
+<PcdFieldName>        ::= <TokenSpaceGuidCName> "." <PcdCName> ["["<Number>"]"]* "." <Field>
 <PcdCName>            ::= <CName>
 <TokenSpaceGuidCName> ::= <CName>
 <PcdFieldEntry>       ::= <PcdFieldName> <FS> <PcdFieldValue> <EOL>
@@ -208,7 +209,7 @@ DEC file (for example, `<Expression>` statements are not permitted).
 <StringVal>           ::= {<UnicodeString>} {<CString>} {<Array>}
 <Array>               ::= "{" {<Array>} {[<Lable>] <ArrayVal> 
                            [<CommaSpace> [<Lable>] <ArrayVal>]* } "}"
-<ArrayVal>            ::= {<Num8Array>} {<GuidStr>} {<DevicePath>} 
+<ArrayVal>            ::= {<Num8Array>} {<GuidStr>} {<DevicePath>} {<CodeStr>}
 <NonNumType>          ::= {<BoolVal>}{<UnicodeString>} {<CString>}
                           {<Offset>} {<UintMac>}
 <Num8Array>           ::= {<NonNumType>} {<ShortNum>} {<UINT8>}
@@ -216,6 +217,7 @@ DEC file (for example, `<Expression>` statements are not permitted).
 <Num32Array>          ::= {<NonNumType>} {<LongNum>} {<UINT32>}
 <Num64Array>          ::= {<NonNumType>} {<LongLongNum>} {<UINT64>}
 <GuidStr>             ::= "GUID(" <GuidVal> ")"
+<CodeStr>             ::= "CODE(" <CData> ")"
 <GuidVal>             ::= {<DblQuote> <RegistryFormatGUID> <DblQuote>}
                           {<CFormatGUID>} {<CName>}
 <DevicePath>          ::= "DEVICE_PATH(" <DevicePathStr> ")"
@@ -325,6 +327,11 @@ correctly.
 All C data arrays used in PCD value fields must be byte arrays. The C format
 GUID style is a special case that is permitted in some fields that use the
 `<CArray>` nomenclature.
+
+**_CData_**
+
+All C data used in PCD value CODE syntax can be C style value to initialize 
+C structure or Array in C source code.
 
 **_EOL_**
 
