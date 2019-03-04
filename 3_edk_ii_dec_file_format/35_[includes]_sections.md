@@ -1,7 +1,7 @@
 <!--- @file
   3.5 [Includes] Sections
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -126,9 +126,6 @@ modifier.
 
 [Includes.X64]
   Include/X64 # Includes specific to X64
-
-[Includes.IPF]
-  Include/Ipf # Includes specific to IA64
 
 [Includes.EBC]
   Include/Ebc # Includes specific to EBC

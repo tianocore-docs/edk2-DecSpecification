@@ -1,7 +1,7 @@
 <!--- @file
   2.6 [Guids] Usage
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -55,10 +55,6 @@ This section uses one of the following section definitions:
 [Guids.X64]
 
 [Guids.X64.Private]
-
-[Guids.IPF]
-
-[Guids.IPF.Private]
 
 [Guids.EBC]
 

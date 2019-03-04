@@ -1,7 +1,7 @@
 <!--- @file
   3.10 PCD Sections
 
-  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -236,7 +236,7 @@ While allowed by this specification, it is not recommended to mix different
 PcdType.architecture values in a single section. The following example is
 valid, but not recommended:
 
-`[PcdsDynamicEx.IA32, PcdsFixedAtBuild.X64, PcdPatchableInModule.IPF]`
+`[PcdsDynamicEx.IA32, PcdsFixedAtBuild.X64]`
 
 Refer to the _PI Specification_ for more information.
 
@@ -270,10 +270,6 @@ Refer to the _PI Specification_ for more information.
 gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel | 0x80000000 |UINT32 | 0x00000006
   ## Indicates the allowable maximum number in extract handler table
   gEfiMdePkgTokenSpaceGuid.PcdMaximumGuidedExtractHandler | 0x10 |UINT32 | 0x00000025
-
-[PcdsFixedAtBuild.IPF]
-  ## This flag is used to control the printout of DebugLib
-  gEfiMdePkgTokenSpaceGuid.PcdIoBlockBaseAddressForIpf |0x0ffffc00000 | UINT64 | 0x0000000c
 
 [PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx] ## This value is used to set the base address of pci express hierarchy
 gEfiMdePkgTokenSpaceGuid.PcdPciExpressBaseAddress | 0xE0000000 |UINT64 | 0x0000000a

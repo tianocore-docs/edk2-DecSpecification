@@ -1,7 +1,7 @@
 <!--- @file
   2.5 [Includes] Usage
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -71,10 +71,6 @@ The `[Includes]` section uses one of the following section definitions:
 [Includes.X64]
 
 [Includes.X64.Private]
-
-[Includes.IPF]
-
-[Includes.IPF.Private]
 
 [includes.EBC]
 

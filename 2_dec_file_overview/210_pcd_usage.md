@@ -1,7 +1,7 @@
 <!--- @file
   2.10 PCD Usage
 
-  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -86,8 +86,6 @@ This section resembles one of the following section definitions:
 [PcdsFixedAtBuild.IA32]
 
 [PcdsPatchableInModule.X64]
-
-[PcdsDynamic.IPF]
 
 [PcdsDynamicEx.EBC]
 ```

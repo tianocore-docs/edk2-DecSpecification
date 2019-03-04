@@ -1,7 +1,7 @@
 <!--- @file
   3.9 [LibraryClasses] Sections
 
-  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -121,9 +121,6 @@ required for different architectures.
   UefiApplicationEntryPoint |Include/Library/UefiApplicationEntryPoint.h # UEFI_APPLICATION
 
 [LibraryClasses.X64]
-  UefiApplicationEntryPoint|Include/Library/UefiApplicationEntryPoint.h # UEFI_APPLICATION
-
-[LibraryClasses.IPF]
   UefiApplicationEntryPoint|Include/Library/UefiApplicationEntryPoint.h # UEFI_APPLICATION
 
 [LibraryClasses.EBC]

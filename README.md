@@ -172,4 +172,5 @@ Copyright (c) 2007-2017, Intel Corporation. All rights reserved.
 |            | Add flexible PCD value format into spec                                                                                                             |                 |
 |            | Add structure PCD definition syntax                                                                                                                 |                 |
 |            | Add clarification that !error statement is not permitted in DEC file                                                                                |                 |
+| 1.28       | [#1453](https://bugzilla.tianocore.org/show_bug.cgi?id=1453) Update DEC spec to remove EDK related contents                                                                                                                                                                                                                                                                                                                        | Mar 2019      |
  
