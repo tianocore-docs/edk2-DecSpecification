@@ -222,8 +222,9 @@ All libraries and components belong to one of the following module types: `BASE`
 framework that is consistent with a similar set of requirements. A module that
 is of module type BASE, depends only on headers and libraries provided in the
 MDE, while a module that is of module type DXE_DRIVER depends on common DXE
-components. The EDK II build system also permits modules of type `USER_DEFINED`.
-These modules will not be processed by the EDK II Build system. See
+components. The EDK II build system also permits modules of type `USER_DEFINED`
+and `HOST_APPLICATION`. These modules will not be processed by the EDK II Build
+system. See
 [Table 2 EDK II Module Types](appendix_b_edk_ii_module_types.md#table-2-edk-ii-module-types).
 
 **Package**

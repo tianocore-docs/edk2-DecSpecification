@@ -236,6 +236,7 @@ DEC file (for example, `<Expression>` statements are not permitted).
                           {"DXE_RUNTIME_DRIVER"} {"DXE_SAL_DRIVER"}
                           {"DXE_SMM_DRIVER"} {"UEFI_DRIVER"}
                           {"UEFI_APPLICATION"} {"USER_DEFINED"}
+                          {"HOST_APPLICATION"}
 <ModuleTypeList>      ::= <ModuleType> [" " <ModuleType>]*
 <IdentifierName>      ::= <TS> {<MACROVAL>} {<PcdName>} <TS>
 <Boolean>             ::= {<BoolType>} {<Expression>}

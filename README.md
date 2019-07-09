@@ -1,7 +1,7 @@
 <!--- @file
   README.md for EDK II Package Declaration (DEC) File Format Specification
 
-  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -173,4 +173,4 @@ Copyright (c) 2007-2017, Intel Corporation. All rights reserved.
 |            | Add structure PCD definition syntax                                                                                                                 |                 |
 |            | Add clarification that !error statement is not permitted in DEC file                                                                                |                 |
 | 1.28       | [#1453](https://bugzilla.tianocore.org/show_bug.cgi?id=1453) Update DEC spec to remove EDK related contents                                                                                                                                                                                                                                                                                                                        | Mar 2019      |
- 
+| 1.29       | [#1952](https://bugzilla.tianocore.org/show_bug.cgi?id=1952) add HOST_APPLICATION ModuleType                                                        | July 2019       |
