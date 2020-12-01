@@ -1,0 +1,1169 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.2 Package Declaration (DEC) Definitions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="33_header_comment_section.html" />
+    
+    
+    <link rel="prev" href="31_general_rules.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../#edk-ii-package-declaration-dec-file-format-specification">
+            
+                    
+                    EDK II Package Declaration (DEC) File Format Specification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1_introduction/">
+            
+                <a href="../1_introduction/#1-introduction">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1_introduction/11_overview.html">
+            
+                <a href="../1_introduction/11_overview.html#11-overview">
+            
+                    
+                    1.1 Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1_introduction/12_terms.html">
+            
+                <a href="../1_introduction/12_terms.html#12-terms">
+            
+                    
+                    1.2 Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1_introduction/13_related_information.html">
+            
+                <a href="../1_introduction/13_related_information.html#13-related-information">
+            
+                    
+                    1.3 Related Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1_introduction/14_target_audience.html">
+            
+                <a href="../1_introduction/14_target_audience.html#14-target-audience">
+            
+                    
+                    1.4 Target Audience
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../1_introduction/15_conventions_used_in_this_document.html">
+            
+                <a href="../1_introduction/15_conventions_used_in_this_document.html#15-conventions-used-in-this-document">
+            
+                    
+                    1.5 Conventions Used in this Document
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2_dec_file_overview/">
+            
+                <a href="../2_dec_file_overview/#2-dec-file-overview">
+            
+                    
+                    2 DEC File Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2_dec_file_overview/21_usage_overview.html">
+            
+                <a href="../2_dec_file_overview/21_usage_overview.html#21-usage-overview">
+            
+                    
+                    2.1 Usage Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2_dec_file_overview/22_declaration_file_format.html">
+            
+                <a href="../2_dec_file_overview/22_declaration_file_format.html#22-declaration-file-format">
+            
+                    
+                    2.2 Declaration File Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2_dec_file_overview/23_edk_ii_dec_format.html">
+            
+                <a href="../2_dec_file_overview/23_edk_ii_dec_format.html#23-edk-ii-dec-format">
+            
+                    
+                    2.3 EDK II DEC Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2_dec_file_overview/24_[defines]_usage.html">
+            
+                <a href="../2_dec_file_overview/24_[defines]_usage.html#24-defines-usage">
+            
+                    
+                    2.4 [Defines] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2_dec_file_overview/25_[includes]_usage.html">
+            
+                <a href="../2_dec_file_overview/25_[includes]_usage.html#25-includes-usage">
+            
+                    
+                    2.5 [Includes] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2_dec_file_overview/26_[guids]_usage.html">
+            
+                <a href="../2_dec_file_overview/26_[guids]_usage.html#26-guids-usage">
+            
+                    
+                    2.6 [Guids] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2_dec_file_overview/27_[protocols]_usage.html">
+            
+                <a href="../2_dec_file_overview/27_[protocols]_usage.html#27-protocols-usage">
+            
+                    
+                    2.7 [Protocols] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2_dec_file_overview/28_[ppis]_usage.html">
+            
+                <a href="../2_dec_file_overview/28_[ppis]_usage.html#28-ppis-usage">
+            
+                    
+                    2.8 [Ppis] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2_dec_file_overview/29_[libraryclasses]_usage.html">
+            
+                <a href="../2_dec_file_overview/29_[libraryclasses]_usage.html#29-libraryclasses-usage">
+            
+                    
+                    2.9 [LibraryClasses] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2_dec_file_overview/210_pcd_usage.html">
+            
+                <a href="../2_dec_file_overview/210_pcd_usage.html#210-pcd-usage">
+            
+                    
+                    2.10 PCD Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2_dec_file_overview/211_[userextensions]_usage.html">
+            
+                <a href="../2_dec_file_overview/211_[userextensions]_usage.html#211-userextensions-usage">
+            
+                    
+                    2.11 [UserExtensions] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./#3-edk-ii-dec-file-format">
+            
+                    
+                    3 EDK II DEC File Format
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="31_general_rules.html">
+            
+                <a href="31_general_rules.html#31-general-rules">
+            
+                    
+                    3.1 General Rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="32_package_declaration_dec_definitions.html">
+            
+                <a href="32_package_declaration_dec_definitions.html#32-package-declaration-dec-definitions">
+            
+                    
+                    3.2 Package Declaration (DEC) Definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="33_header_comment_section.html">
+            
+                <a href="33_header_comment_section.html#33-header-comment-section">
+            
+                    
+                    3.3 Header Comment Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="34_[defines]_section.html">
+            
+                <a href="34_[defines]_section.html#34-defines-section">
+            
+                    
+                    3.4 [Defines] Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="35_[includes]_sections.html">
+            
+                <a href="35_[includes]_sections.html#35-includes-sections">
+            
+                    
+                    3.5 [Includes] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="36_[guids]_sections.html">
+            
+                <a href="36_[guids]_sections.html#36-guids-sections">
+            
+                    
+                    3.6 [Guids] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="37_[protocols]_sections.html">
+            
+                <a href="37_[protocols]_sections.html#37-protocols-sections">
+            
+                    
+                    3.7 [Protocols] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="38_[ppis]_sections.html">
+            
+                <a href="38_[ppis]_sections.html#38-ppis-sections">
+            
+                    
+                    3.8 [PPIs] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="39_[libraryclasses]_sections.html">
+            
+                <a href="39_[libraryclasses]_sections.html#39-libraryclasses-sections">
+            
+                    
+                    3.9 [LibraryClasses] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="310_pcd_sections.html">
+            
+                <a href="310_pcd_sections.html#310-pcd-sections">
+            
+                    
+                    3.10 PCD Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="311_[userextensions]_sections.html">
+            
+                <a href="311_[userextensions]_sections.html#311-userextensions-sections">
+            
+                    
+                    3.11 [UserExtensions] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../appendix_a_dec_examples/">
+            
+                <a href="../appendix_a_dec_examples/#appendix-a-dec-examples">
+            
+                    
+                    Appendix A DEC Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.html">
+            
+                <a href="../appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.html#a1-edk-ii-intelframeworkpkg-example">
+            
+                    
+                    A.1 EDK II IntelFrameworkPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.html">
+            
+                <a href="../appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.html#a2-edk-ii-emulatorpkg-example">
+            
+                    
+                    A.2 EDK II EmulatorPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../appendix_a_dec_examples/a3_shellbinpkgdec.html">
+            
+                <a href="../appendix_a_dec_examples/a3_shellbinpkgdec.html#a3-shellbinpkgdec">
+            
+                    
+                    A.3 ShellBinPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../appendix_a_dec_examples/a4_ueficpupkgdec.html">
+            
+                <a href="../appendix_a_dec_examples/a4_ueficpupkgdec.html#a4-ueficpupkgdec">
+            
+                    
+                    A.4 UefiCpuPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#appendix-b-edk-ii-module-types">
+            
+                    
+                    Appendix B EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Tables
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="32_package_declaration_dec_definitions.html">
+            
+                <a href="32_package_declaration_dec_definitions.html#table-1-macro-usages">
+            
+                    
+                    Table 1 MACRO Usages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#table-2-edk-ii-module-types">
+            
+                    
+                    Table 2 EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.2 Package Declaration (DEC) Definitions</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  3.2 Package Declaration (DEC) Definitions
+
+  Copyright (c) 2007-2018, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="32-package-declaration-dec-definitions">3.2 Package Declaration (DEC) Definitions</h2>
+<p>This section defines content and format of a package declaration file. The
+<code>[Defines]</code> section must appear before any other section except the <code>&lt;Header&gt;</code>
+comment block. (The header, when specified, is always the first section of a
+DEC file.) The remaining sections may be specified in any order within the DEC
+file.</p>
+<h4 id="summary">Summary</h4>
+<p>The EDK II Package Declaration (DEC) file has the following format (using the
+EBNF).</p>
+<pre><code class="lang-c">&lt;EDK_II_DEC&gt; ::= &lt;Header&gt;?
+                 &lt;Defines&gt;
+                 &lt;Includes&gt;*
+                 &lt;LibraryClass&gt;*
+                 &lt;Guids&gt;*
+                 &lt;Protocols&gt;*
+                 &lt;Ppis&gt;*
+                 &lt;Pcd&gt;*
+                 &lt;UserExtensions&gt;*
+</code></pre>
+<h3 id="321-common-definitions">3.2.1 Common Definitions</h3>
+<h4 id="summary">Summary</h4>
+<p>The following are common definitions used by multiple section types in EDK II
+metadata documents. Not all of the definitions below pertain to entries in the
+DEC file (for example, <code>&lt;Expression&gt;</code> statements are not permitted).</p>
+<h4 id="prototype">Prototype</h4>
+<pre><code class="lang-c">&lt;Word&gt;                ::= (a-zA-Z0-9_)(a-zA-Z0-9_-.)* Alphanumeric characters
+                          with optional period &quot;.&quot;, dash &quot;-&quot; and/or underscore
+                          &quot;_&quot; characters. A period character may not be
+                          followed by another period character.
+                          No white space characters are permitted.
+&lt;SimpleWord&gt;          ::= (a-zA-Z0-9)(a-zA-Z0-9_-)* A word that cannot contain
+                          a period character.
+&lt;ToolWord&gt;            ::= (A-Z)(a-zA-Z0-9)* Alphanumeric characters. white
+                          space characters are not permitted.
+&lt;FileSep&gt;             ::= &quot;/&quot;
+&lt;Extension&gt;           ::= (a-zA-Z0-9_-)+ One or more alphanumeric characters.
+&lt;File&gt;                ::= &lt;Word&gt; [&quot;.&quot; &lt;Extension&gt;]
+&lt;PATH&gt;                ::= [&lt;MACROVAL&gt; &lt;FileSep&gt;] &lt;RelativePath&gt;
+&lt;RelativePath&gt;        ::= &lt;DirName&gt; [&lt;FileSep&gt; &lt;DirName&gt;]*
+&lt;DirName&gt;             ::= {&lt;Word&gt;} {&lt;MACROVAL&gt;}
+&lt;FullFilename&gt;        ::= &lt;PATH&gt; &lt;FileSep&gt; &lt;File&gt;
+&lt;Filename&gt;            ::= [&lt;PATH&gt; &lt;FileSep&gt;] &lt;File&gt;
+&lt;Chars&gt;               ::= (a-zA-Z0-9_)
+&lt;Digit&gt;               ::= (0-9)
+&lt;NonDigit&gt;            ::= (a-zA-Z_)
+&lt;Identifier&gt;          ::= &lt;NonDigit&gt; &lt;Chars&gt;*
+&lt;CName&gt;               ::= &lt;Identifier&gt; # A valid C variable name.
+&lt;AsciiChars&gt;          ::= (0x21 - 0x7E)
+&lt;CChars&gt;              ::= [{0x21} {(0x23 - 0x26)} {(0x28 - 0x5B)}
+                          {(0x5D - 0x7E)} {&lt;EscapeSequence&gt;}]*
+&lt;DblQuote&gt;            ::= 0x22
+&lt;SglQuote&gt;            ::= 0x27
+&lt;EscapeSequence&gt;      ::= &quot;\&quot; {&quot;n&quot;} {&quot;t&quot;} {&quot;f&quot;} {&quot;r&quot;} {&quot;b&quot;} {&quot;0&quot;} {&quot;\&quot;}
+                          {&lt;DblQuote&gt;} {&lt;SglQuote&gt;}
+&lt;TabSpace&gt;            ::= {&lt;Tab&gt;} {&lt;Space&gt;}
+&lt;TS&gt;                  ::= &lt;TabSpace&gt;*
+&lt;MTS&gt;                 ::= &lt;TabSpace&gt;+
+&lt;Tab&gt;                 ::= 0x09
+&lt;Space&gt;               ::= 0x20
+&lt;CR&gt;                  ::= 0x0D
+&lt;LF&gt;                  ::= 0x0A
+&lt;CRLF&gt;                ::= &lt;CR&gt; &lt;LF&gt;
+&lt;WhiteSpace&gt;          ::= {&lt;TS&gt;} {&lt;CR&gt;} {&lt;LF&gt;} {&lt;CRLF&gt;}
+&lt;WS&gt;                  ::= &lt;WhiteSpace&gt;*
+&lt;Eq&gt;                  ::= &lt;TS&gt; &quot;=&quot; &lt;TS&gt;
+&lt;FieldSeparator&gt;      ::= &quot;|&quot;
+&lt;FS&gt;                  ::= &lt;TS&gt; &lt;FieldSeparator&gt; &lt;TS&gt;
+&lt;Wildcard&gt;            ::= &quot;*&quot;
+&lt;CommaSpace&gt;          ::= &quot;,&quot; &lt;Space&gt;*
+&lt;Cs&gt;                  ::= &quot;,&quot; &lt;Space&gt;*
+&lt;AsciiString&gt;         ::= [ &lt;TS&gt;* &lt;AsciiChars&gt;* ]*
+&lt;EmptyString&gt;         ::= &lt;DblQuote&gt;&lt;DblQuote&gt;
+&lt;CFlags&gt;              ::= &lt;AsciiString&gt;
+&lt;PrintChars&gt;          ::= {&lt;TS&gt;} {&lt;CChars&gt;}
+&lt;QuotedString&gt;        ::= &lt;DblQuote&gt; &lt;PrintChars&gt;* &lt;DblQuote&gt;
+&lt;SglQuotedString&gt;     ::= &lt;SglQuote&gt; &lt;PrintChars&gt;* &lt;SglQuote&gt;
+&lt;CString&gt;             ::= {&lt;QuotedString&gt;} {&lt;SglQuotedString&gt;}
+&lt;NormalizedString&gt;    ::= &lt;DblQuote&gt; [{&lt;Word&gt;} {&lt;Space&gt;}]+ &lt;DblQuote&gt;
+&lt;GlobalComment&gt;       ::= &lt;WS&gt; &quot;#&quot; [&lt;TS&gt; &lt;AsciiString&gt;] &lt;EOL&gt;+
+&lt;Comment&gt;             ::= &quot;#&quot; &lt;TS&gt; &lt;AsciiString&gt; &lt;EOL&gt;+
+&lt;UnicodeString&gt;       ::= &quot;L&quot; {&lt;QuotedString&gt;} {&lt;SglQuotedString&gt;}
+&lt;HexDigit&gt;            ::= (a-fA-F0-9)
+&lt;HexByte&gt;             ::= {&quot;0x&quot;} {&quot;0X&quot;} [&lt;HexDigit&gt;] &lt;HexDigit&gt;
+&lt;HexNumber&gt;           ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;HexDigit&gt;+
+&lt;HexVersion&gt;          ::= &quot;0x&quot; [0]* &lt;Major&gt; &lt;Minor&gt;
+&lt;Major&gt;               ::= &lt;HexDigit&gt;? &lt;HexDigit&gt;? &lt;HexDigit&gt;?
+                          &lt;HexDigit&gt;
+&lt;Minor&gt;               ::= &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt;
+&lt;DecimalVersion&gt;      ::= {&quot;0&quot;} {(1-9) [(0-9)]*} [&quot;.&quot; (0-9)+]
+&lt;VersionVal&gt;          ::= {&lt;HexVersion&gt;} {(0-9)+ &quot;.&quot; (0-99)}
+&lt;GUID&gt;                ::= {&lt;RegistryFormatGUID&gt;} {&lt;CFormatGUID&gt;}
+&lt;RegistryFormatGUID&gt;  ::= &lt;RHex8&gt; &quot;-&quot; &lt;RHex4&gt; &quot;-&quot; &lt;RHex4&gt; &quot;-&quot; &lt;RHex4&gt; &quot;-&quot;
+                          &lt;RHex12&gt;
+&lt;RHex4&gt;               ::= &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt;
+&lt;RHex8&gt;               ::= &lt;RHex4&gt; &lt;RHex4&gt;
+&lt;RHex12&gt;              ::= &lt;RHex4&gt; &lt;RHex4&gt; &lt;RHex4&gt;
+&lt;RawH2&gt;               ::= &lt;HexDigit&gt;? &lt;HexDigit&gt;
+&lt;RawH4&gt;               ::= &lt;HexDigit&gt;? &lt;HexDigit&gt;? &lt;HexDigit&gt;? &lt;HexDigit&gt;
+&lt;OptRawH4&gt;            ::= &lt;HexDigit&gt;? &lt;HexDigit&gt;? &lt;HexDigit&gt;? &lt;HexDigit&gt;?
+&lt;Hex2&gt;                ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;RawH2&gt;
+&lt;Hex4&gt;                ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;RawH4&gt;
+&lt;Hex8&gt;                ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;OptRawH4&gt; &lt;RawH4&gt;
+&lt;Hex12&gt;               ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;OptRawH4&gt; &lt;OptRawH4&gt; &lt;RawH4&gt;
+&lt;Hex16&gt;               ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;OptRawH4&gt; &lt;OptRawH4&gt; &lt;OptRawH4&gt;
+                          &lt;RawH4&gt;
+&lt;CFormatGUID&gt;         ::= &quot;{&quot; &lt;Hex8&gt; &lt;CommaSpace&gt; &lt;Hex4&gt; &lt;CommaSpace&gt;
+                          &lt;Hex4&gt; &lt;CommaSpace&gt; &quot;{&quot;
+                          &lt;Hex2&gt; &lt;CommaSpace&gt; &lt;Hex2&gt; &lt;CommaSpace&gt;
+                          &lt;Hex2&gt; &lt;CommaSpace&gt; &lt;Hex2&gt; &lt;CommaSpace&gt;
+                          &lt;Hex2&gt; &lt;CommaSpace&gt; &lt;Hex2&gt; &lt;CommaSpace&gt;
+                          &lt;Hex2&gt; &lt;CommaSpace&gt; &lt;Hex2&gt; &quot;}&quot; &quot;}&quot;
+&lt;CArray&gt;              ::= &quot;{&quot; {&lt;NList&gt;} {&lt;CArray&gt;} &quot;}&quot;
+&lt;NList&gt;               ::= &lt;HexByte&gt;
+                          [&lt;CommaSpace&gt; &lt;HexByte&gt;]*
+&lt;RawData&gt;             ::= &lt;TS&gt; &lt;Number&gt; [&lt;Cs&gt; &lt;Number&gt; [&lt;EOL&gt; &lt;TS&gt;]]*
+&lt;Integer&gt;             ::= {(0-9)} {(1-9)(0-9)+}
+&lt;Number&gt;              ::= {&lt;Integer&gt;} {&lt;HexNumber&gt;}
+&lt;TRUE&gt;                ::= {&quot;TRUE&quot;} {&quot;true&quot;} {&quot;True&quot;} {&quot;0x1&quot;}
+                          {&quot;0x01&quot;} {&quot;1&quot;}
+&lt;FALSE&gt;               ::= {&quot;FALSE&quot;} {&quot;false&quot;} {&quot;False&quot;} {&quot;0x0&quot;}
+                          {&quot;0x00&quot;} {&quot;0&quot;}
+&lt;BoolVal&gt;             ::= {&lt;TRUE&gt;} {&lt;FALSE&gt;}
+&lt;BoolType&gt;            ::= {&lt;BoolVal&gt;} {&quot;{&quot;&lt;BoolVal&gt;&quot;}&quot;}
+&lt;MACRO&gt;               ::= (A-Z)(A-Z0-9_)*
+&lt;MACROVAL&gt;            ::= &quot;$(&quot; &lt;MACRO&gt; &quot;)&quot;
+&lt;PcdName&gt;             ::= &lt;TokenSpaceGuidCName&gt; &quot;.&quot; &lt;PcdCName&gt;
+&lt;PcdFieldName&gt;        ::= &lt;TokenSpaceGuidCName&gt; &quot;.&quot; &lt;PcdCName&gt; &quot;.&quot; &lt;Field&gt;
+&lt;PcdCName&gt;            ::= &lt;CName&gt;
+&lt;TokenSpaceGuidCName&gt; ::= &lt;CName&gt;
+&lt;PcdFieldEntry&gt;       ::= &lt;PcdFieldName&gt; &lt;FS&gt; &lt;PcdFieldValue&gt; &lt;EOL&gt;
+&lt;PcdFieldValue&gt;       ::= {&lt;BoolType&gt;} {&lt;NumValUint8&gt;} {&lt;NumValUint16&gt;} {&lt;NumValUint32&gt;} {&lt;NumValUint64&gt;} {&lt;StringVal&gt;} {&lt;MACROVAL&gt;} {&lt;Expression&gt;}
+&lt;UINT8&gt;               ::= {&quot;0x&quot;} {&quot;0X&quot;} (\x0 - \xFF)
+&lt;UINT16&gt;              ::= {&quot;0x&quot;} {&quot;0X&quot;} (\x0 - \xFFFF)
+&lt;UINT32&gt;              ::= {&quot;0x&quot;} {&quot;0X&quot;} (\x0 - \xFFFFFFFF)
+&lt;UINT64&gt;              ::= {&quot;0x&quot;} {&quot;0X&quot;} (\x0 - \xFFFFFFFFFFFFFFFF)
+&lt;UINT8z&gt;              ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;HexDigit&gt; &lt;HexDigit&gt;
+&lt;UINT16z&gt;             ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt;
+                          &lt;HexDigit&gt;
+&lt;UINT32z&gt;             ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;HexDigit&gt; &lt;HexDigit&gt;
+                          &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt;
+                          &lt;HexDigit&gt; &lt;HexDigit&gt;
+&lt;UINT64z&gt;             ::= {&quot;0x&quot;} {&quot;0X&quot;} &lt;HexDigit&gt; &lt;HexDigit&gt;
+                          &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt;
+                          &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt;
+                          &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt; &lt;HexDigit&gt;
+                          &lt;HexDigit&gt; &lt;HexDigit&gt;
+&lt;ShortNum&gt;            ::= (0-255)
+&lt;IntNum&gt;              ::= (0-65535)
+&lt;LongNum&gt;             ::= (0-4294967295)
+&lt;LongLongNum&gt;         ::= (0-18446744073709551615)
+&lt;ValUint8&gt;            ::= {&lt;ShortNum&gt;} {&lt;UINT8&gt;} {&lt;BoolVal&gt;}
+                          {&lt;CString&gt;} {&lt;UnicodeString&gt;}
+&lt;ValUint16&gt;           ::= {&lt;IntNum&gt;} {&lt;UINT16&gt;} {&lt;BoolVal&gt;}
+                          {&lt;CString&gt;} {&lt;UnicodeString&gt;}
+&lt;ValUint32&gt;           ::= {&lt;LongNum&gt;} {&lt;UINT32&gt;} {&lt;BoolVal&gt;}
+                          {&lt;CString&gt;} {&lt;UnicodeString&gt;}
+&lt;ValUint64&gt;           ::= {&lt;LongLongNum&gt;} {&lt;UINT64&gt;} {&lt;BoolVal&gt;}
+                          {&lt;CString&gt;} {&lt;UnicodeString&gt;}
+&lt;NumValUint8&gt;         ::= {&lt;ValUint8&gt;} {&quot;{&quot;&lt;ValUint8&gt;&quot;}&quot;}
+&lt;NumValUint16&gt;        ::= {&lt;ValUint16&gt;}
+                          {&quot;{&quot;&lt;ValUint8&gt; [&lt;CommaSpace&gt; &lt;ValUint8&gt;]*&quot;}&quot;}
+&lt;NumValUint32&gt;        ::= {&lt;ValUint32&gt;}
+                          {&quot;{&quot;&lt;ValUint8&gt; [&lt;CommaSpace&gt; &lt;ValUint8&gt;]*&quot;}&quot;}
+&lt;NumValUint64&gt;        ::= {&lt;ValUint64&gt;}
+                          {&quot;{&quot;&lt;ValUint8&gt; [&lt;CommaSpace&gt; &lt;ValUint8&gt;]*&quot;}&quot;}
+&lt;StringVal&gt;           ::= {&lt;UnicodeString&gt;} {&lt;CString&gt;} {&lt;Array&gt;}
+&lt;Array&gt;               ::= &quot;{&quot; {&lt;Array&gt;} {[&lt;Lable&gt;] &lt;ArrayVal&gt; 
+                           [&lt;CommaSpace&gt; [&lt;Lable&gt;] &lt;ArrayVal&gt;]* } &quot;}&quot;
+&lt;ArrayVal&gt;            ::= {&lt;Num8Array&gt;} {&lt;GuidStr&gt;} {&lt;DevicePath&gt;} 
+&lt;NonNumType&gt;          ::= {&lt;BoolVal&gt;}{&lt;UnicodeString&gt;} {&lt;CString&gt;}
+                          {&lt;Offset&gt;} {&lt;UintMac&gt;}
+&lt;Num8Array&gt;           ::= {&lt;NonNumType&gt;} {&lt;ShortNum&gt;} {&lt;UINT8&gt;}
+&lt;Num16Array&gt;          ::= {&lt;NonNumType&gt;} {&lt;IntNum&gt;} {&lt;UINT16&gt;}
+&lt;Num32Array&gt;          ::= {&lt;NonNumType&gt;} {&lt;LongNum&gt;} {&lt;UINT32&gt;}
+&lt;Num64Array&gt;          ::= {&lt;NonNumType&gt;} {&lt;LongLongNum&gt;} {&lt;UINT64&gt;}
+&lt;GuidStr&gt;             ::= &quot;GUID(&quot; &lt;GuidVal&gt; &quot;)&quot;
+&lt;GuidVal&gt;             ::= {&lt;DblQuote&gt; &lt;RegistryFormatGUID&gt; &lt;DblQuote&gt;}
+                          {&lt;CFormatGUID&gt;} {&lt;CName&gt;}
+&lt;DevicePath&gt;          ::= &quot;DEVICE_PATH(&quot; &lt;DevicePathStr&gt; &quot;)&quot;
+&lt;DevicePathStr&gt;       ::= A double quoted string that follow the device path
+                          as string format defined in UEFI Specification 2.6
+                          Section 9.6
+&lt;UintMac&gt;             ::= {&lt;Uint8Mac&gt;} {&lt;Uint16Mac&gt;} {&lt;Uint32Mac&gt;} {&lt;Uint64Mac&gt;}
+&lt;Uint8Mac&gt;            ::= &quot;UINT8(&quot; &lt;Num8Array&gt; &quot;)&quot;
+&lt;Uint16Mac&gt;           ::= &quot;UINT16(&quot; &lt;Num16Array&gt; &quot;)&quot;
+&lt;Uint32Mac&gt;           ::= &quot;UINT32(&quot; &lt;Num32Array&gt; &quot;)&quot;
+&lt;Uint64Mac&gt;           ::= &quot;UINT64(&quot; &lt;Num64Array&gt; &quot;)&quot;
+&lt;Lable&gt;               ::= &quot;LABEL(&quot; &lt;CName&gt; &quot;)&quot;
+&lt;Offset&gt;              ::= &quot;OFFSET_OF(&quot; &lt;CName&gt; &quot;)&quot;
+&lt;ModuleType&gt;          ::= {&quot;BASE&quot;} {&quot;SEC&quot;} {&quot;PEI_CORE&quot;} {&quot;PEIM&quot;}
+                          {&quot;DXE_CORE&quot;} {&quot;DXE_DRIVER&quot;} {&quot;SMM_CORE&quot;}
+                          {&quot;DXE_RUNTIME_DRIVER&quot;} {&quot;DXE_SAL_DRIVER&quot;}
+                          {&quot;DXE_SMM_DRIVER&quot;} {&quot;UEFI_DRIVER&quot;}
+                          {&quot;UEFI_APPLICATION&quot;} {&quot;USER_DEFINED&quot;}
+&lt;ModuleTypeList&gt;      ::= &lt;ModuleType&gt; [&quot; &quot; &lt;ModuleType&gt;]*
+&lt;IdentifierName&gt;      ::= &lt;TS&gt; {&lt;MACROVAL&gt;} {&lt;PcdName&gt;} &lt;TS&gt;
+&lt;Boolean&gt;             ::= {&lt;BoolType&gt;} {&lt;Expression&gt;}
+&lt;EOL&gt;                 ::= &lt;TS&gt; 0x0D 0x0A
+&lt;OA&gt;                  ::= (a-zA-Z)(a-zA-Z0-9)*
+&lt;arch&gt;                ::= {&quot;IA32&quot;} {&quot;X64&quot;} {&quot;IPF&quot;} {&quot;EBC&quot;} {&lt;OA&gt;}
+</code></pre>
+<hr>
+<p><strong>Note:</strong> When using CString, UnicodeString or byte array format as
+UINT8/UINT16/UINT32/UINT64 values, please make sure they fit in the
+target type&apos;s size, otherwise tool would report failure.</p>
+<hr>
+<p><strong>Note:</strong> LABEL() macro in byte arrays to tag the byte offset of a
+location in a byte array. OFFSET_OF() macro in byte arrays that returns
+the byte offset of a LABEL() declared in a byte array.</p>
+<hr>
+<p><strong>Note:</strong> When using the characters &quot;|&quot; or &quot;||&quot; in an expression, the
+expression must be encapsulated in open &quot;(&quot; and close &quot;)&quot; parenthesis.</p>
+<hr>
+<p><strong>Note:</strong> Comments may appear anywhere within a DEC file, provided they follow
+the rules that a comment may not be enclosed within Section headers, and that
+in line comments must appear at the end of a statement.</p>
+<hr>
+<h4 id="parameters">Parameters</h4>
+<p><strong><em>Expression</em></strong></p>
+<p>Expression syntax is defined the EDK II Expression Syntax Specification.</p>
+<p><strong><em>ExpressionVal</em></strong></p>
+<p>An expression that evaluates to a number that fits the datum types of the other
+elements, For example, if one of the other elements is a <code>UINT8</code>, then the
+expression must evaluate to a value that is byte. It is recommended that all
+parameters be typecast to <code>UINT64</code> values before any operation performed, then
+the result can be tested to ensure that the datum size of the result is
+correct. PCD names can be used as parameters, and the value of the PCD is used
+for evaluation purposes. Any result that exceeds the size of the datum type
+must break the build.</p>
+<hr>
+<p><strong>Note:</strong> Circular references (self-references are tight circular references)
+must cause a build break.</p>
+<hr>
+<p><strong><em>UnicodeString</em></strong></p>
+<p>When the <code>&lt;UnicodeString&gt;</code> element (these characters are string literals as
+defined by the C99 specification: L&quot;string&quot;/L&apos;string&apos;, not actual Unicode
+characters) is included in a value, the build tools may be required to expand
+the ASCII string between the quotation marks into a valid UCS-2 character format
+string. The build tools parser must treat all content between the field separators
+(excluding white space characters around the field separators) as ASCII literal
+content when generating the AutoGen.c and AutoGen.h files.</p>
+<p><strong><em>Comments</em></strong></p>
+<p>Strings that appear in comments may be ignored by the build tools. An ASCII
+string matching the format of the ASCII string defined by <code>&lt;UnicodeString&gt;</code>
+(L&quot;Foo&quot; for example,) that appears in a comment must never be expanded by any
+tool.</p>
+<p><strong><em>CFlags</em></strong></p>
+<p>CFlags refers to a string of valid arguments appended to the command line of
+any third party or provided tool. It is not limited to just a compiler
+executable tool. MACRO values that appear in quoted strings in CFlags content
+must not be expanded by parsing tools.</p>
+<p><strong><em>OA</em></strong></p>
+<p>Other Architecture - One or more user defined target architectures, such as ARM
+or PPC. The architectures listed here must have a corresponding entry in the
+EDK II meta-data file, <em>Conf/tools_def.txt</em>.</p>
+<p><strong><em>FileSep</em></strong></p>
+<p>FileSep refers to either the back slash &quot;\&quot; or forward slash &quot;/&quot; characters
+that are used to separate directory names. All EDK II DEC files must use the
+&quot;<code>/</code>&quot; forward slash character when specifying the directory portion of a
+filename. Microsoft operating systems, that normally use a back slash character
+for separating directory names, will interpret the forward slash character
+correctly.</p>
+<p><strong><em>CArray</em></strong></p>
+<p>All C data arrays used in PCD value fields must be byte arrays. The C format
+GUID style is a special case that is permitted in some fields that use the
+<code>&lt;CArray&gt;</code> nomenclature.</p>
+<p><strong><em>EOL</em></strong></p>
+<p>The DOS End Of Line: &quot;0x0D 0x0A&quot; character sequence must be used for all EDK II
+meta-data files. All <em>Nix based tools can properly process the DOS EOL
+characters. Microsoft based tools cannot process the </em>Nix style EOL characters.</p>
+<h3 id="322-macros">3.2.2 MACROs</h3>
+<p>Use of MACRO statements is optional.</p>
+<h4 id="summary">Summary</h4>
+<p>Macro statements are characterize by a <code>DEFINE</code> line. Macro statements in DEC
+files are only permitted to describe a path (shortcut name). If the Macro
+statement is within the <code>[Defines]</code> section, then the Macro is common to the
+entire file, with local definitions taking precedence (if the same MACRO name
+is used in subsequent sections, then the MACRO value is local to only that
+section.)</p>
+<p>Macro statements in comments must also be ignored by parsing tools.</p>
+<p>Macros may not be referenced before they are defined.</p>
+<p>A previously defined macro is permitted to be used as $(MACRO) in the right
+side of a different Macro (in the value) statement.</p>
+<p>Macro names must not use the name of the tokens defined in this file, such as
+PACKAGE_GUID is defined as a token in the <code>[Defines]</code> section of this document,
+and therefore cannot be used as the <code>&lt;MACRO&gt;</code> name in a <code>&lt;MacroDefinition&gt;</code>
+statements, <code>&lt;MACRO&gt;</code> variable.</p>
+<p>If the tools encounters a macroval, as in $(MACRO), that is not defined, the
+build tools must break.</p>
+<h4 id="prototype">Prototype</h4>
+<pre><code class="lang-c">&lt;MacroDefinition&gt; ::= &lt;TS&gt; <span class="hljs-string">&quot;DEFINE&quot;</span> &lt;TS&gt; &lt;MACRO&gt; &lt;Eq&gt; [&lt;Value&gt;] &lt;EOL&gt;
+&lt;Value&gt;           ::= {&lt;PATH&gt;} {&lt;Filename&gt;}
+</code></pre>
+<h4 id="examples">Examples</h4>
+<pre><code class="lang-ini">DEFINE GEN_SKU_DIR = MyPlatformPkg/GenPei
+DEFINE SKU1_Dir = MyPlatformPkg/Sku1/Pei
+DEFINE LIB = Include/Library
+DEFINE PROTO_HDRS = $(LIB)/Protocol
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>&lt;PATH&gt;</code></strong></p>
+<p>Any part of the path line can be replaced by a MACRO as shown in the following
+table.</p>
+<h6 id="table-1-macro-usages">Table 1 MACRO Usages</h6>
+<table>
+<thead>
+<tr>
+<th>MACRO DEFINITION</th>
+<th>MACRO USAGE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DEFINE MY_MACRO = test1</td>
+<td>$(MY_MACRO)/test2/test3.inf</td>
+</tr>
+<tr>
+<td>DEFINE MY_MACRO = test1/</td>
+<td>$(MY_MACRO)test2/test3.inf</td>
+</tr>
+<tr>
+<td>DEFINE MY_MACRO = test3.inf</td>
+<td>test1/test2/$(MY_MACRO)</td>
+</tr>
+<tr>
+<td>DEFINE MY_MACRO = test3</td>
+<td>test1/test2/$(MY_MACRO).inf</td>
+</tr>
+<tr>
+<td>DEFINE MY_MACRO = test1/test2/test3.inf</td>
+<td>$(MY_MACRO)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="323-conditional-statements">3.2.3 Conditional Statements</h3>
+<p>The conditional statements are not permitted anywhere within the DEC file.</p>
+<h3 id="324-include-statement">3.2.4 !include Statement</h3>
+<p>The !include statement is not permitted in an EDK II DEC file.</p>
+<h3 id="325-special-comment-blocks">3.2.5 Special Comment Blocks</h3>
+<p>This section defines special format comment blocks that contain information
+about this package. These command blocks are not required.</p>
+<p>The <em>UEFI Distribution Package Specification</em> states the for a given PCD Token
+Space, Error numbers must be unique. Since there may be multiple PCD that may
+have identical error types, an error number with an associated error message
+may be shared. The syntax described here can be used by tools to map these
+error numbers by a token space GUID C name. These comment blocks must appear
+before content might be used (in later sections of the DEC file).</p>
+<h4 id="prototype">Prototype</h4>
+<pre><code class="lang-c">&lt;ErrNoBlock&gt; ::= &lt;TS&gt; <span class="hljs-string">&quot;#&quot;</span> &lt;EOL&gt;
+                 &lt;TS&gt; <span class="hljs-string">&quot;#&quot;</span> &lt;MTS&gt; <span class="hljs-string">&quot;[Error.&quot;</span> &lt;TSpaceGuidCName&gt; <span class="hljs-string">&quot;]&quot;</span> &lt;EOL&gt;
+                 [&lt;TS&gt; <span class="hljs-string">&quot;#&quot;</span> &lt;MTS&gt; &lt;UINT32&gt; &lt;FS&gt; &lt;AsciiString&gt; &lt;EOL&gt;]+
+                 &lt;TS&gt; <span class="hljs-string">&quot;#&quot;</span> &lt;EOL&gt;+
+</code></pre>
+<h4 id="example">Example</h4>
+<pre><code class="lang-ini"><span class="hljs-comment">#</span>
+<span class="hljs-comment"># [Error.gEfiIntelFrameworkModulePkgTokenSpaceGuid]</span>
+<span class="hljs-comment"># 0x80000001 | Invalid value provided.</span>
+<span class="hljs-comment"># 0x80000002 | Reserved bits must be set to zero.</span>
+<span class="hljs-comment">#</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="31_general_rules.html#31-general-rules" class="navigation navigation-prev " aria-label="Previous page: 3.1 General Rules">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="33_header_comment_section.html#33-header-comment-section" class="navigation navigation-next " aria-label="Next page: 3.3 Header Comment Section">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.2 Package Declaration (DEC) Definitions","level":"1.4.2","depth":2,"next":{"title":"3.3 Header Comment Section","level":"1.4.3","depth":2,"anchor":"#33-header-comment-section","path":"3_edk_ii_dec_file_format/33_header_comment_section.md","ref":"3_edk_ii_dec_file_format/33_header_comment_section.md#33-header-comment-section","articles":[]},"previous":{"title":"3.1 General Rules","level":"1.4.1","depth":2,"anchor":"#31-general-rules","path":"3_edk_ii_dec_file_format/31_general_rules.md","ref":"3_edk_ii_dec_file_format/31_general_rules.md#31-general-rules","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"title":"EDK II Package Declaration (DEC) File Format Specification","version":"Revision 1.27"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.md","mtime":"2020-12-01T04:51:58.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T04:52:29.324Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

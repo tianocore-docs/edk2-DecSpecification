@@ -1,0 +1,859 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.3 Related Information · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14_target_audience.html" />
+    
+    
+    <link rel="prev" href="12_terms.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../#edk-ii-package-declaration-dec-file-format-specification">
+            
+                    
+                    EDK II Package Declaration (DEC) File Format Specification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./#1-introduction">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="11_overview.html">
+            
+                <a href="11_overview.html#11-overview">
+            
+                    
+                    1.1 Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="12_terms.html">
+            
+                <a href="12_terms.html#12-terms">
+            
+                    
+                    1.2 Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="13_related_information.html">
+            
+                <a href="13_related_information.html#13-related-information">
+            
+                    
+                    1.3 Related Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="14_target_audience.html">
+            
+                <a href="14_target_audience.html#14-target-audience">
+            
+                    
+                    1.4 Target Audience
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="15_conventions_used_in_this_document.html">
+            
+                <a href="15_conventions_used_in_this_document.html#15-conventions-used-in-this-document">
+            
+                    
+                    1.5 Conventions Used in this Document
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2_dec_file_overview/">
+            
+                <a href="../2_dec_file_overview/#2-dec-file-overview">
+            
+                    
+                    2 DEC File Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2_dec_file_overview/21_usage_overview.html">
+            
+                <a href="../2_dec_file_overview/21_usage_overview.html#21-usage-overview">
+            
+                    
+                    2.1 Usage Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2_dec_file_overview/22_declaration_file_format.html">
+            
+                <a href="../2_dec_file_overview/22_declaration_file_format.html#22-declaration-file-format">
+            
+                    
+                    2.2 Declaration File Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2_dec_file_overview/23_edk_ii_dec_format.html">
+            
+                <a href="../2_dec_file_overview/23_edk_ii_dec_format.html#23-edk-ii-dec-format">
+            
+                    
+                    2.3 EDK II DEC Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2_dec_file_overview/24_[defines]_usage.html">
+            
+                <a href="../2_dec_file_overview/24_[defines]_usage.html#24-defines-usage">
+            
+                    
+                    2.4 [Defines] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2_dec_file_overview/25_[includes]_usage.html">
+            
+                <a href="../2_dec_file_overview/25_[includes]_usage.html#25-includes-usage">
+            
+                    
+                    2.5 [Includes] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2_dec_file_overview/26_[guids]_usage.html">
+            
+                <a href="../2_dec_file_overview/26_[guids]_usage.html#26-guids-usage">
+            
+                    
+                    2.6 [Guids] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2_dec_file_overview/27_[protocols]_usage.html">
+            
+                <a href="../2_dec_file_overview/27_[protocols]_usage.html#27-protocols-usage">
+            
+                    
+                    2.7 [Protocols] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2_dec_file_overview/28_[ppis]_usage.html">
+            
+                <a href="../2_dec_file_overview/28_[ppis]_usage.html#28-ppis-usage">
+            
+                    
+                    2.8 [Ppis] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2_dec_file_overview/29_[libraryclasses]_usage.html">
+            
+                <a href="../2_dec_file_overview/29_[libraryclasses]_usage.html#29-libraryclasses-usage">
+            
+                    
+                    2.9 [LibraryClasses] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2_dec_file_overview/210_pcd_usage.html">
+            
+                <a href="../2_dec_file_overview/210_pcd_usage.html#210-pcd-usage">
+            
+                    
+                    2.10 PCD Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2_dec_file_overview/211_[userextensions]_usage.html">
+            
+                <a href="../2_dec_file_overview/211_[userextensions]_usage.html#211-userextensions-usage">
+            
+                    
+                    2.11 [UserExtensions] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3_edk_ii_dec_file_format/">
+            
+                <a href="../3_edk_ii_dec_file_format/#3-edk-ii-dec-file-format">
+            
+                    
+                    3 EDK II DEC File Format
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3_edk_ii_dec_file_format/31_general_rules.html">
+            
+                <a href="../3_edk_ii_dec_file_format/31_general_rules.html#31-general-rules">
+            
+                    
+                    3.1 General Rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html">
+            
+                <a href="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html#32-package-declaration-dec-definitions">
+            
+                    
+                    3.2 Package Declaration (DEC) Definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3_edk_ii_dec_file_format/33_header_comment_section.html">
+            
+                <a href="../3_edk_ii_dec_file_format/33_header_comment_section.html#33-header-comment-section">
+            
+                    
+                    3.3 Header Comment Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3_edk_ii_dec_file_format/34_[defines]_section.html">
+            
+                <a href="../3_edk_ii_dec_file_format/34_[defines]_section.html#34-defines-section">
+            
+                    
+                    3.4 [Defines] Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3_edk_ii_dec_file_format/35_[includes]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/35_[includes]_sections.html#35-includes-sections">
+            
+                    
+                    3.5 [Includes] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../3_edk_ii_dec_file_format/36_[guids]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/36_[guids]_sections.html#36-guids-sections">
+            
+                    
+                    3.6 [Guids] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../3_edk_ii_dec_file_format/37_[protocols]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/37_[protocols]_sections.html#37-protocols-sections">
+            
+                    
+                    3.7 [Protocols] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../3_edk_ii_dec_file_format/38_[ppis]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/38_[ppis]_sections.html#38-ppis-sections">
+            
+                    
+                    3.8 [PPIs] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../3_edk_ii_dec_file_format/39_[libraryclasses]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/39_[libraryclasses]_sections.html#39-libraryclasses-sections">
+            
+                    
+                    3.9 [LibraryClasses] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../3_edk_ii_dec_file_format/310_pcd_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/310_pcd_sections.html#310-pcd-sections">
+            
+                    
+                    3.10 PCD Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../3_edk_ii_dec_file_format/311_[userextensions]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/311_[userextensions]_sections.html#311-userextensions-sections">
+            
+                    
+                    3.11 [UserExtensions] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../appendix_a_dec_examples/">
+            
+                <a href="../appendix_a_dec_examples/#appendix-a-dec-examples">
+            
+                    
+                    Appendix A DEC Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.html">
+            
+                <a href="../appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.html#a1-edk-ii-intelframeworkpkg-example">
+            
+                    
+                    A.1 EDK II IntelFrameworkPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.html">
+            
+                <a href="../appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.html#a2-edk-ii-emulatorpkg-example">
+            
+                    
+                    A.2 EDK II EmulatorPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../appendix_a_dec_examples/a3_shellbinpkgdec.html">
+            
+                <a href="../appendix_a_dec_examples/a3_shellbinpkgdec.html#a3-shellbinpkgdec">
+            
+                    
+                    A.3 ShellBinPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../appendix_a_dec_examples/a4_ueficpupkgdec.html">
+            
+                <a href="../appendix_a_dec_examples/a4_ueficpupkgdec.html#a4-ueficpupkgdec">
+            
+                    
+                    A.4 UefiCpuPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#appendix-b-edk-ii-module-types">
+            
+                    
+                    Appendix B EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Tables
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html">
+            
+                <a href="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html#table-1-macro-usages">
+            
+                    
+                    Table 1 MACRO Usages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#table-2-edk-ii-module-types">
+            
+                    
+                    Table 2 EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.3 Related Information</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  1.3 Related Information
+
+  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="13-related-information">1.3 Related Information</h2>
+<p>The following publications and sources of information may be useful to you or
+are referred to by this specification:</p>
+<ul>
+<li><p><em>Unified Extensible Firmware Interface Specification</em>, Version 2.5, Unified
+EFI, Inc, 2015, <a href="http://www.uefi.org" target="_blank">http://www.uefi.org</a>.</p>
+</li>
+<li><p><em>Platform Initialization Specification</em>, Version 1.4, Unified EFI, Inc.,
+2015, <a href="http://www.uefi.org" target="_blank">http://www.uefi.org</a>.</p>
+</li>
+<li><p><em>UEFI Platform Initialization Distribution Package Specification</em>, Version
+1.0 with Errata B, Unified EFI, Inc., 2014, <a href="http://www.uefi.org" target="_blank">http://www.uefi.org</a>.</p>
+</li>
+<li><p><em>Intel(R) Platform Innovation Framework for EFI Specifications</em>, Intel, 2007,
+<a href="http://www.intel.com/technology/framework" target="_blank">http://www.intel.com/technology/framework</a>.</p>
+</li>
+<li><p><a href="https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications" target="_blank">https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Specifications</a></p>
+<ul>
+<li><p><em>EDK II Module Writers Guide,</em> Intel, 2010.</p>
+</li>
+<li><p><em>EDK II User Manual</em>, Intel, 2010.</p>
+</li>
+<li><p><em>EDK II C Coding Standard</em>, Intel, 2015.</p>
+</li>
+<li><p><em>EDK II Build Specification,</em> Intel, 2016.</p>
+</li>
+<li><p><em>EDK II DSC Specification</em>, Intel, 2016.</p>
+</li>
+<li><p><em>EDK II FDF Specification</em>, Intel, 2016.</p>
+</li>
+<li><p><em>EDK II INF Specification</em>, Intel, 2016.</p>
+</li>
+<li><p><em>Multi-String UNI File Format Specification,</em> Intel, 2016.</p>
+</li>
+<li><p><em>EDK II Expression Syntax Specification,</em> Intel, 2015.</p>
+</li>
+<li><p><em>VFR Programming Language</em>, Intel, 2015<em>.</em></p>
+</li>
+<li><p><em>UEFI Packaging Tool (UEFIPT) Quick Start,</em> Intel, 2015.</p>
+</li>
+<li><p><em>EDK II Platform Configuration Database Infrastructure Descriptions,</em> Intel, 2009.</p>
+</li>
+</ul>
+</li>
+<li><p><em>INI file</em>, Wikipedia, <a href="http://en.wikipedia.org/wiki/INI_file" target="_blank">http://en.wikipedia.org/wiki/INI_file</a>.</p>
+</li>
+<li><p><em>C Now - C Programming Information</em>, Langston University, Tulsa Oklahoma, J.H. Young,
+1999-  2011, <a href="http://c.comsci.us/syntax/expression/ebnf.html" target="_blank">http://c.comsci.us/syntax/expression/ebnf.html</a>.</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="12_terms.html#12-terms" class="navigation navigation-prev " aria-label="Previous page: 1.2 Terms">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14_target_audience.html#14-target-audience" class="navigation navigation-next " aria-label="Next page: 1.4 Target Audience">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.3 Related Information","level":"1.2.3","depth":2,"next":{"title":"1.4 Target Audience","level":"1.2.4","depth":2,"anchor":"#14-target-audience","path":"1_introduction/14_target_audience.md","ref":"1_introduction/14_target_audience.md#14-target-audience","articles":[]},"previous":{"title":"1.2 Terms","level":"1.2.2","depth":2,"anchor":"#12-terms","path":"1_introduction/12_terms.md","ref":"1_introduction/12_terms.md#12-terms","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"title":"EDK II Package Declaration (DEC) File Format Specification","version":"Revision 1.27"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1_introduction/13_related_information.md","mtime":"2020-12-01T04:51:58.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T04:52:29.324Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
