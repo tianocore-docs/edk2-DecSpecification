@@ -1,0 +1,1019 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.10 PCD Sections · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="311_[userextensions]_sections.html" />
+    
+    
+    <link rel="prev" href="39_[libraryclasses]_sections.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../#edk-ii-package-declaration-dec-file-format-specification">
+            
+                    
+                    EDK II Package Declaration (DEC) File Format Specification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1_introduction/">
+            
+                <a href="../1_introduction/#1-introduction">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1_introduction/11_overview.html">
+            
+                <a href="../1_introduction/11_overview.html#11-overview">
+            
+                    
+                    1.1 Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1_introduction/12_terms.html">
+            
+                <a href="../1_introduction/12_terms.html#12-terms">
+            
+                    
+                    1.2 Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1_introduction/13_related_information.html">
+            
+                <a href="../1_introduction/13_related_information.html#13-related-information">
+            
+                    
+                    1.3 Related Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1_introduction/14_target_audience.html">
+            
+                <a href="../1_introduction/14_target_audience.html#14-target-audience">
+            
+                    
+                    1.4 Target Audience
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../1_introduction/15_conventions_used_in_this_document.html">
+            
+                <a href="../1_introduction/15_conventions_used_in_this_document.html#15-conventions-used-in-this-document">
+            
+                    
+                    1.5 Conventions Used in this Document
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2_dec_file_overview/">
+            
+                <a href="../2_dec_file_overview/#2-dec-file-overview">
+            
+                    
+                    2 DEC File Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2_dec_file_overview/21_usage_overview.html">
+            
+                <a href="../2_dec_file_overview/21_usage_overview.html#21-usage-overview">
+            
+                    
+                    2.1 Usage Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2_dec_file_overview/22_declaration_file_format.html">
+            
+                <a href="../2_dec_file_overview/22_declaration_file_format.html#22-declaration-file-format">
+            
+                    
+                    2.2 Declaration File Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2_dec_file_overview/23_edk_ii_dec_format.html">
+            
+                <a href="../2_dec_file_overview/23_edk_ii_dec_format.html#23-edk-ii-dec-format">
+            
+                    
+                    2.3 EDK II DEC Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2_dec_file_overview/24_[defines]_usage.html">
+            
+                <a href="../2_dec_file_overview/24_[defines]_usage.html#24-defines-usage">
+            
+                    
+                    2.4 [Defines] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2_dec_file_overview/25_[includes]_usage.html">
+            
+                <a href="../2_dec_file_overview/25_[includes]_usage.html#25-includes-usage">
+            
+                    
+                    2.5 [Includes] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2_dec_file_overview/26_[guids]_usage.html">
+            
+                <a href="../2_dec_file_overview/26_[guids]_usage.html#26-guids-usage">
+            
+                    
+                    2.6 [Guids] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2_dec_file_overview/27_[protocols]_usage.html">
+            
+                <a href="../2_dec_file_overview/27_[protocols]_usage.html#27-protocols-usage">
+            
+                    
+                    2.7 [Protocols] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2_dec_file_overview/28_[ppis]_usage.html">
+            
+                <a href="../2_dec_file_overview/28_[ppis]_usage.html#28-ppis-usage">
+            
+                    
+                    2.8 [Ppis] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2_dec_file_overview/29_[libraryclasses]_usage.html">
+            
+                <a href="../2_dec_file_overview/29_[libraryclasses]_usage.html#29-libraryclasses-usage">
+            
+                    
+                    2.9 [LibraryClasses] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2_dec_file_overview/210_pcd_usage.html">
+            
+                <a href="../2_dec_file_overview/210_pcd_usage.html#210-pcd-usage">
+            
+                    
+                    2.10 PCD Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2_dec_file_overview/211_[userextensions]_usage.html">
+            
+                <a href="../2_dec_file_overview/211_[userextensions]_usage.html#211-userextensions-usage">
+            
+                    
+                    2.11 [UserExtensions] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./#3-edk-ii-dec-file-format">
+            
+                    
+                    3 EDK II DEC File Format
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="31_general_rules.html">
+            
+                <a href="31_general_rules.html#31-general-rules">
+            
+                    
+                    3.1 General Rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="32_package_declaration_dec_definitions.html">
+            
+                <a href="32_package_declaration_dec_definitions.html#32-package-declaration-dec-definitions">
+            
+                    
+                    3.2 Package Declaration (DEC) Definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="33_header_comment_section.html">
+            
+                <a href="33_header_comment_section.html#33-header-comment-section">
+            
+                    
+                    3.3 Header Comment Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="34_[defines]_section.html">
+            
+                <a href="34_[defines]_section.html#34-defines-section">
+            
+                    
+                    3.4 [Defines] Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="35_[includes]_sections.html">
+            
+                <a href="35_[includes]_sections.html#35-includes-sections">
+            
+                    
+                    3.5 [Includes] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="36_[guids]_sections.html">
+            
+                <a href="36_[guids]_sections.html#36-guids-sections">
+            
+                    
+                    3.6 [Guids] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="37_[protocols]_sections.html">
+            
+                <a href="37_[protocols]_sections.html#37-protocols-sections">
+            
+                    
+                    3.7 [Protocols] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="38_[ppis]_sections.html">
+            
+                <a href="38_[ppis]_sections.html#38-ppis-sections">
+            
+                    
+                    3.8 [PPIs] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="39_[libraryclasses]_sections.html">
+            
+                <a href="39_[libraryclasses]_sections.html#39-libraryclasses-sections">
+            
+                    
+                    3.9 [LibraryClasses] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="310_pcd_sections.html">
+            
+                <a href="310_pcd_sections.html#310-pcd-sections">
+            
+                    
+                    3.10 PCD Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="311_[userextensions]_sections.html">
+            
+                <a href="311_[userextensions]_sections.html#311-userextensions-sections">
+            
+                    
+                    3.11 [UserExtensions] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../appendix_a_dec_examples/">
+            
+                <a href="../appendix_a_dec_examples/#appendix-a-dec-examples">
+            
+                    
+                    Appendix A DEC Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.html">
+            
+                <a href="../appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.html#a1-edk-ii-intelframeworkpkg-example">
+            
+                    
+                    A.1 EDK II IntelFrameworkPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.html">
+            
+                <a href="../appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.html#a2-edk-ii-emulatorpkg-example">
+            
+                    
+                    A.2 EDK II EmulatorPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../appendix_a_dec_examples/a3_shellbinpkgdec.html">
+            
+                <a href="../appendix_a_dec_examples/a3_shellbinpkgdec.html#a3-shellbinpkgdec">
+            
+                    
+                    A.3 ShellBinPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../appendix_a_dec_examples/a4_ueficpupkgdec.html">
+            
+                <a href="../appendix_a_dec_examples/a4_ueficpupkgdec.html#a4-ueficpupkgdec">
+            
+                    
+                    A.4 UefiCpuPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#appendix-b-edk-ii-module-types">
+            
+                    
+                    Appendix B EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Tables
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="32_package_declaration_dec_definitions.html">
+            
+                <a href="32_package_declaration_dec_definitions.html#table-1-macro-usages">
+            
+                    
+                    Table 1 MACRO Usages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#table-2-edk-ii-module-types">
+            
+                    
+                    Table 2 EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.10 PCD Sections</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 04:33:40]</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  3.10 PCD Sections
+
+  Copyright (c) 2007-2019, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="310-pcd-sections">3.10 PCD Sections</h2>
+<p>These are optional sections. However, if modules in this package&apos;s directory
+tree use a PCD that is not declared in other DEC files, then the package
+creator must list the PCD in this file.</p>
+<h4 id="summary">Summary</h4>
+<p>Defines the PCDs section tags in the DEC files.</p>
+<p>There are five defined PCD access method types. Do not confuse these access
+types with the data types of the PCDs. The five access method types are:
+<code>PcdsFeatureFlag</code>, <code>PcdsFixedAtBuild</code>, <code>PcdsPatchableInModule</code>, <code>PcdsDynamic</code>
+and <code>PcdsDynamicEx</code>. The PCD is used to define potential values that a module
+might be coded against, and if a module uses the access methods for
+<code>PcdsDynamic</code>, then the platform can define the final usage. PCDs listed as
+<code>PcdsDynamic</code> or <code>PcdsDynamicEx</code> will only have one value in the final binary
+image - the PEI and DXE PCD Drivers that maintain these values use a single
+database for all architectures, with a unique value for a PCD (identified by
+the Token Space GUID value and the Token Number).</p>
+<p>If a PCD is only listed under a <code>PcdsFixedAtBuild</code> or <code>PcdsPatchableInModule</code>,
+then modules are restricted, and cannot be coded to use either of the dynamic
+PCD access methods.</p>
+<p>Using the &quot;<code>common</code>&quot; architectural modifier is exactly the same as specifying a
+PCD section type without an architectural modifier. A PCD listed in an INF or
+DSC file which uses an architectural modifier may be listed in the &apos;<code>common</code>&apos;
+section in the DEC file; it is not required to list PCDs in architectural
+sections in the DEC. If a PCD is only listed under a section with an
+architectural modifier that is not &apos;common&apos;, then it may only be used by
+modules build for that specific architecture.</p>
+<p>Each PCD entry must be listed only once per section. If a PCD is listed more
+than once within one section, the last entry takes precedence.</p>
+<p>The PCD values in this file are the default values. Default values listed in
+architectural sections override default values specified in a &apos;common&apos;
+architectural section. The EDK II build system allows these values may be
+overridden by default values in the INF files (provided all INF files use the
+same default value for PCDs that are used by multiple modules) and by values
+specified in the DSC or FDF file. A PCD&apos;s Datum type cannot be changed for
+different access methods, only one datum type is permitted.</p>
+<p>PCD entries may be put into any or all PCD section types except
+<code>PcdsFeatureFlag</code> sections.</p>
+<p>The use of a <code>&lt;MACROVAL&gt;</code> element in this section is prohibited.</p>
+<p>The Token number specified in a PCD entry is used in code (auto-generated files
+by the EDK II build system), along with the Token Space GUID value to uniquely
+identify a given PCD. The Token number must be identical for every entry of a
+PCD in this file (using a different token number for a PCD listed in
+<code>PcdsDynamic</code> and <code>PcdsDynamicEx</code> sections for example, will result in a build
+break).</p>
+<p>PCDs listed in <code>PcdsFeatureFlag</code> sections must only be listed in
+<code>PcdsFeatureFlag</code> sections.</p>
+<h4 id="prototype">Prototype</h4>
+<pre><code class="lang-c">&lt;PCDs&gt;            ::= &lt;PcdSections&gt;*
+&lt;PcdSections&gt;     ::= {&lt;PcdFeature&gt;} {&lt;PcdOther&gt;}
+&lt;PcdFeature&gt;      ::= &lt;FFSectionTag&gt; &lt;FFEntries&gt;*
+&lt;FFEntries&gt;       ::= [&quot;##&quot; &lt;TS&gt; &lt;PcdDescription&gt;]
+                      [&lt;TS&gt; &lt;Prompt&gt;]
+                      [{&lt;List&gt;} {&lt;Express&gt;}]
+                      &lt;TS&gt; &lt;PcdBool&gt;
+&lt;FFSectionTag&gt;    ::= &quot;[&quot; &quot;PcdsFeatureFlag&quot; [&lt;com_FFattribs&gt;} &quot;]&quot; &lt;EOL&gt;
+&lt;com_FFattribs&gt;   ::= {&quot;.common&quot;} {&lt;FFattribs&gt;}
+&lt;FFattribs&gt;       ::= &lt;attrs&gt; [&quot;,&quot; &lt;TS&gt; &quot;PcdsFeatureFlag&quot; &lt;attrs&gt;]*
+&lt;PcdOther&gt;        ::= &quot;[&quot; &lt;PcdType&gt; [&lt;com_or_attribs&gt;] &quot;]&quot; &lt;EOL&gt;
+                      &lt;PcdEntries&gt;*
+&lt;PcdType&gt;         ::= {&quot;PcdsPatchableInModule&quot;} {&quot;PcdsFixedAtBuild&quot;}
+                      {&quot;PcdsDynamic&quot;} {&quot;PcdsDynamicEx&quot;}
+&lt;com_or_attribs&gt;  ::= {&lt;com_attribs&gt;} {&lt;attribs&gt;}
+&lt;com_attribs&gt;     ::= [&quot;.common&quot;] [&quot;,&quot; &lt;TS&gt; &lt;PcdType&gt; [&quot;.common&quot;]]*
+&lt;attribs&gt;         ::= &lt;attrs&gt; [&quot;,&quot; &lt;TS&gt; &lt;PcdType&gt; &lt;attrs&gt;]*
+&lt;attrs&gt;           ::= &quot;.&quot; &lt;arch&gt;
+&lt;PcdEntries&gt;      ::= [&quot;##&quot; &lt;TS&gt; &lt;PcdDescription&gt;]
+                      [&lt;TS&gt; &lt;Prompt&gt;]
+                      [&lt;DoxComment&gt;] &lt;PcdEntry&gt;
+&lt;PcdEntry&gt;        ::= &lt;TS&gt; {&lt;PcdBool&gt;} {&lt;PcdNumEntry&gt;} {&lt;PcdPtr&gt;} {&lt;PcdStruct&gt;} {&lt;PcdFieldValue&gt;}
+&lt;PcdNumEntry&gt;     ::= {&lt;Pcd8&gt;} {&lt;Pcd16&gt;} {&lt;Pcd32&gt;} {&lt;Pcd64&gt;}
+&lt;PcdBool&gt;         ::= &lt;PcdName&gt; &lt;FS&gt; &lt;BoolPcd&gt; &lt;FS&gt; &lt;Token&gt; &lt;CbOrEol&gt;
+&lt;BoolPcd&gt;         ::= &lt;Boolean&gt; &lt;FS&gt; &quot;BOOLEAN&quot;
+&lt;CbOrEol&gt;         ::= {&lt;CommentBlock&gt;} {&lt;EOL&gt;}
+&lt;Pcd8&gt;            ::= &lt;PcdName&gt; &lt;FS&gt; &lt;PcdUint8&gt; &lt;FS&gt; &lt;Token&gt; &lt;CbOrEol&gt;
+&lt;PcdUint8&gt;        ::= {&lt;NumValUint8&gt;} {&lt;Expression&gt;} &lt;FS&gt; &quot;UINT8&quot;
+&lt;Pcd16&gt;           ::= &lt;PcdName&gt; &lt;FS&gt; &lt;PcdUint16&gt; &lt;FS&gt; &lt;Token&gt; &lt;CbOrEol&gt;
+&lt;PcdUint16&gt;       ::= {&lt;NumValUint16&gt;} {&lt;Expression&gt;} &lt;FS&gt; &quot;UINT16&quot;
+&lt;Pcd32&gt;           ::= &lt;PcdName&gt; &lt;FS&gt; &lt;PcdUint32&gt; &lt;FS&gt; &lt;Token&gt; &lt;CbOrEol&gt;
+&lt;PcdUint32&gt;       ::= {&lt;NumValUint32&gt;} {&lt;Expression&gt;} &lt;FS&gt; &quot;UINT32&quot;
+&lt;Pcd64&gt;           ::= &lt;PcdName&gt; &lt;FS&gt; &lt;PcdUint64&gt; &lt;FS&gt; &lt;Token&gt; &lt;CbOrEol&gt;
+&lt;PcdUint64&gt;       ::= {&lt;NumValUint64&gt;} {&lt;Expression&gt;} &lt;FS&gt; &quot;UINT64&quot;
+&lt;PcdStruct&gt;       ::= &lt;PcdName&gt; &lt;FS&gt; &lt;PtrVal&gt; &lt;FS&gt; {&lt;CName&gt;} {&lt;CArrayName&gt;} &lt;FS&gt; &lt;Token&gt; &quot;{&quot; &lt;EOL&gt;
+                      &lt;TS&gt; &lt;PcdStructHF&gt;
+                      &lt;TS&gt; &lt;PcdStructPKGs&gt; &quot;}&quot; &lt;CbOrEol&gt;
+&lt;PcdStructHF&gt;     ::= &quot;&lt;HeaderFile&gt;&quot; &lt;EOL&gt; &lt;PcdStructFile&gt;
+&lt;PcdStructPKGs&gt;   ::= &quot;&lt;Packages&gt;&quot; &lt;EOL&gt; &lt;PcdStructFile&gt;*
+&lt;PcdStructFile&gt;   ::= &lt;Filename&gt; &lt;EOL&gt;
+&lt;PcdPtr&gt;          ::= &lt;PcdName&gt; &lt;FS&gt; &lt;PcdPtrVal&gt; &lt;FS&gt; &lt;Token&gt; &lt;CbOrEol&gt;
+&lt;PcdPtrVal&gt;       ::= &lt;PtrVal&gt; &lt;FS&gt; &quot;VOID*&quot;
+&lt;PtrVal&gt;          ::= {&lt;StringVal&gt;} {&lt;Expression&gt;}
+&lt;Token&gt;           ::= {&lt;LongNum&gt;} {&lt;UINT32&gt;}
+&lt;DoxComment&gt;      ::= &lt;TS&gt; {&lt;Range&gt;+} {&lt;List&gt;} {&lt;Express&gt;+}
+&lt;Prompt&gt;          ::= &quot;#&quot; &lt;TS&gt; &quot;@Prompt &lt;MTS&gt; &lt;AsciiString&gt; &lt;EOL&gt;
+&lt;Range&gt;           ::= &quot;#&quot; &lt;TS&gt; &quot;@ValidRange&quot; &lt;TS&gt; &lt;ERangeValues&gt; &lt;EOL&gt;
+&lt;ERangeValues&gt;    ::= [&lt;ErrorCode&gt; &lt;TS&gt;] &lt;RangeValues&gt;
+&lt;List&gt;            ::= &quot;#&quot; &lt;TS&gt; &quot;@ValidList&quot; &lt;TS&gt; &lt;EValidValueList&gt; &lt;EOL&gt;
+&lt;EValidValueList&gt; ::= [&lt;ErrorCode&gt; &lt;TS&gt;] &lt;ValidValueList&gt;
+&lt;Express&gt;         ::= &quot;#&quot; &lt;TS&gt; &quot;@Expression&quot; &lt;TS&gt; &lt;EExpression&gt; &lt;EOL&gt;
+&lt;EExpression&gt;     ::= [&lt;ErrorCode&gt; &lt;TS&gt;] &lt;Expression&gt;
+&lt;ErrorCode&gt;       ::= &lt;NumValUint32&gt; &lt;FS&gt;
+&lt;PcdDescription&gt;  ::= &lt;AsciiString&gt; &lt;EOL&gt;
+                      [&lt;TS&gt; &quot;#&quot; &lt;AsciiString&gt; &lt;EOL&gt;]*
+&lt;CommentBlock&gt;    ::= &lt;TS&gt; &quot;##&quot; &lt;TS&gt; &lt;ModuleTypeList&gt; {&lt;Comment&gt;} {&lt;EOL&gt;}
+&lt;RangeValues&gt;     ::= {&lt;ValidRange&gt;} {&lt;RangeExpress&gt;}
+&lt;RngOp&gt;           ::= &lt;TS&gt; {&quot;AND&quot;} {&quot;and&quot;} {&quot;OR&quot;} {&quot;or&quot;} &lt;TS&gt;
+&lt;RangeExpress&gt;    ::= {&quot;(&quot; &lt;ValidRng&gt; &quot;)&quot; &lt;RngOp&gt; &quot;(&quot; &lt;ValidRng&gt; &quot;)&quot;}
+                      {&quot;NOT&quot; &lt;TS&gt; &quot;(&quot; &lt;ValidRng&gt; &quot;)&quot;}
+&lt;ValidRng&gt;        ::= [&quot;NOT&quot; &lt;TS&gt;] &quot;(&quot; &lt;ValidRangeIn&gt; &quot;)&quot;
+&lt;ValidRangeIn&gt;    ::= [&quot;NOT&quot; &lt;TS&gt;] {&lt;Integer&gt; &lt;TS&gt; &quot;-&quot; &lt;TS&gt; &lt;Integer&gt;}
+                      {&lt;HexValue&gt; &lt;TS&gt; &quot;-&quot; &lt;TS&gt; &lt;HexValue&gt;}
+                      {&quot;LT&quot; &lt;TS&gt; {&lt;Integer&gt;} {&lt;HexValue&gt;}}
+                      {&quot;GT&quot; &lt;TS&gt; {&lt;Integer&gt;} {&lt;HexValue&gt;}}
+                      {&quot;LE&quot; &lt;TS&gt; {&lt;Integer&gt;} {&lt;HexValue&gt;}}
+                      {&quot;GE&quot; &lt;TS&gt; {&lt;Integer&gt;} {&lt;HexValue&gt;}}
+                      {&quot;XOR&quot; &lt;TS&gt; {&lt;Integer&gt;} {&lt;HexValue&gt;}}
+                      {&quot;EQ&quot; &lt;TS&gt; {&lt;Integer&gt;} {&lt;HexValue&gt;}}
+&lt;ValidValueList&gt;  ::= &lt;Number&gt; [&quot;,&quot; &lt;TS&gt; &lt;Number&gt;]*
+</code></pre>
+<h4 id="parameters">Parameters</h4>
+<p><strong><em>Expression</em></strong></p>
+<p>The expression in the @Expression entry must evaluate to True in order for the value to be valid.</p>
+<p><strong><em>RangeExpressions</em></strong></p>
+<p>This is required to be an in-fix logical expression, evaluated left to right, for a range of values, using Relational, Equality and Logical Operators (LT, LE, GT, GE.) The forms PcdCName and/or PcdTokenSpaceGuidCName.PcdCName are permitted. Parentheses are recommended for clarity. Since there may be different error numbers associated with valid ranges (one for less than, another for greater than) more than one ValidRange entry is permitted.</p>
+<p><strong><em>HexDigit</em></strong></p>
+<p>This value, if specified corresponds to the ErrorNumber of an Error Message
+defined in a UEFI PI Distribution Package. Each error number is related to a
+single error message (translations of message text are not considered as
+separate error messages), with the text of error messages included in the
+Unicode file specified in the <code>PACKAGE_UNI_FILE</code> element in the <code>[Defines]</code>
+section.</p>
+<p><strong><em>TokenNumber</em></strong></p>
+<p>Each PCD declared within a token space (defined by the Token Space GUID) must
+be assigned a unique 32-bit value. This token number and an optional token
+space GUID are used in code for accessing a PCD&apos;s value.</p>
+<p><strong><em>ErrorCode</em></strong></p>
+<p>This value, if specified corresponds to the ErrorNumber of an Error Message
+defined in a UEFI PI Distribution Package. Each error number is related to a
+single error message.</p>
+<p><strong><em>Token</em></strong></p>
+<p>Each PCD declared within a token space (defined by the Token Space GUID) must
+be assigned a unique 32-bit value. This token number and an optional token
+space GUID are used in code for accessing a PCD&apos;s value.</p>
+<h4 id="restrictions">Restrictions</h4>
+<p>It is permissible to list a PCD entry under common and under a specific
+architecture.</p>
+<p>It is permissible to specify PCD entries under all architectures except
+&quot;<code>common</code>&quot; if different default values may be required for different
+architectures. The tools must use architectural specific recommended values
+over recommended values listed in the common sections. This technique is
+permitted to allow unique recommendations for individual architectures.</p>
+<p>It is not permissible to list command modifier and an architectural modifier in
+a section header. The following example is not permitted:</p>
+<p><code>[PcdsPatchableInModule.IA32, PcdPatchableInModule.common]</code></p>
+<p>It is permissible to specify multiple architectures for like PcdType items in
+the same section header. For example:</p>
+<p><code>[PcdsFeatureFlag.IA32, PcdsFeatureFlag.X64]</code></p>
+<p>It is permissible to mix PcdsPatchableInModule, PcdsFixed, PcdsDynamic and
+PcdsDynamicEx PcdType elements within an architecture section. For example:</p>
+<p><code>[PcdsPatchableInModule.IA32, PcdsFixedAtBuild.IA32]</code></p>
+<p>The <code>PcdsFeatureFlag</code> PcdType may not be mixed with any other PcdType elements
+in the section header. The following example is NOT VALID:</p>
+<p><code>[PcdsFeatureFlag.IA32, PcdsFixedAtBuild.IA32]</code></p>
+<p>While allowed by this specification, it is not recommended to mix different</p>
+<p>PcdType.architecture values in a single section. The following example is
+valid, but not recommended:</p>
+<p><code>[PcdsDynamicEx.IA32, PcdsFixedAtBuild.X64]</code></p>
+<p>Refer to the <em>PI Specification</em> for more information.</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-ini">########################################################################
+#
+#
+# PCD Declarations section - list of all PCDs Declared by this package
+# Only this package should be providing the
+# declaration, other packages should not.
+#
+#
+#
+[PcdsFeatureFlag.common]
+  ## If TRUE, the component name protocol will not be installed.
+  gEfiMdePkgTokenSpaceGuid.PcdComponentNameDisable | FALSE |BOOLEAN | 0x0000000d
+  ## If TRUE, the driver diagnostics protocol will not be installed.
+  gEfiMdePkgTokenSpaceGuid.PcdDriverDiagnosticsDisable | FALSE |BOOLEAN | 0x0000000e
+
+[PcdsFixedAtBuild.common]
+  ## Indicates the maximum length of unicode string
+  gEfiMdePkgTokenSpaceGuid.PcdMaximumUnicodeStringLength |1000000 | UINT32 | 0x00000001
+  ## Indicates the maximum length of ascii string
+  gEfiMdePkgTokenSpaceGuid.PcdMaximumAsciiStringLength | 1000000 |UINT32 | 0x00000002
+  ## Indicates the maximum node number of linked list
+  gEfiMdePkgTokenSpaceGuid.PcdMaximumLinkedListLength | 1000000 |UINT32 | 0x00000003
+
+[PcdsFixedAtBuild.common, PcdsPatchableInModule.common] ## This flag is used to control the printout of DebugLib
+gEfiMdePkgTokenSpaceGuid.PcdDebugPrintErrorLevel | 0x80000000 |UINT32 | 0x00000006
+  ## Indicates the allowable maximum number in extract handler table
+  gEfiMdePkgTokenSpaceGuid.PcdMaximumGuidedExtractHandler | 0x10 |UINT32 | 0x00000025
+
+[PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx] ## This value is used to set the base address of pci express hierarchy
+gEfiMdePkgTokenSpaceGuid.PcdPciExpressBaseAddress | 0xE0000000 |UINT64 | 0x0000000a
+  ## Default current ISO 639-2 language: English &amp; French
+  gEfiMdePkgTokenSpaceGuid.PcdUefiVariableDefaultLangCodes |&quot;engfraengfra&quot; | VOID* | 0x0000001c
+  ## Default current ISO 639-2 language: English
+  gEfiMdePkgTokenSpaceGuid.PcdUefiVariableDefaultLang | &quot;eng&quot; |VOID* | 0x0000001d
+</code></pre>
+<hr>
+<p><strong>Note:</strong> In the above example, the backslash character is used to show a line
+continuation for readability. Use of a backslash character in the actual DEC file
+is not permitted.</p>
+<hr>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 04:33:40]</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="39_[libraryclasses]_sections.html#39-libraryclasses-sections" class="navigation navigation-prev " aria-label="Previous page: 3.9 [LibraryClasses] Sections">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="311_[userextensions]_sections.html#311-userextensions-sections" class="navigation navigation-next " aria-label="Next page: 3.11 [UserExtensions] Sections">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.10 PCD Sections","level":"1.4.10","depth":2,"next":{"title":"3.11 [UserExtensions] Sections","level":"1.4.11","depth":2,"anchor":"#311-userextensions-sections","path":"3_edk_ii_dec_file_format/311_[userextensions]_sections.md","ref":"3_edk_ii_dec_file_format/311_[userextensions]_sections.md#311-userextensions-sections","articles":[]},"previous":{"title":"3.9 [LibraryClasses] Sections","level":"1.4.9","depth":2,"anchor":"#39-libraryclasses-sections","path":"3_edk_ii_dec_file_format/39_[libraryclasses]_sections.md","ref":"3_edk_ii_dec_file_format/39_[libraryclasses]_sections.md#39-libraryclasses-sections","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"EDK II Package Declaration (DEC) File Format Specification","version":"Revision 1.27"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3_edk_ii_dec_file_format/310_pcd_sections.md","mtime":"2020-12-01T04:33:07.120Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T04:33:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

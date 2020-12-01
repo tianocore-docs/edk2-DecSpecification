@@ -1,0 +1,1092 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>A.1 EDK II IntelFrameworkPkg Example · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="a2_edk_ii_emulatorpkg_example.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../#edk-ii-package-declaration-dec-file-format-specification">
+            
+                    
+                    EDK II Package Declaration (DEC) File Format Specification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1_introduction/">
+            
+                <a href="../1_introduction/#1-introduction">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1_introduction/11_overview.html">
+            
+                <a href="../1_introduction/11_overview.html#11-overview">
+            
+                    
+                    1.1 Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1_introduction/12_terms.html">
+            
+                <a href="../1_introduction/12_terms.html#12-terms">
+            
+                    
+                    1.2 Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1_introduction/13_related_information.html">
+            
+                <a href="../1_introduction/13_related_information.html#13-related-information">
+            
+                    
+                    1.3 Related Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1_introduction/14_target_audience.html">
+            
+                <a href="../1_introduction/14_target_audience.html#14-target-audience">
+            
+                    
+                    1.4 Target Audience
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../1_introduction/15_conventions_used_in_this_document.html">
+            
+                <a href="../1_introduction/15_conventions_used_in_this_document.html#15-conventions-used-in-this-document">
+            
+                    
+                    1.5 Conventions Used in this Document
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../2_dec_file_overview/">
+            
+                <a href="../2_dec_file_overview/#2-dec-file-overview">
+            
+                    
+                    2 DEC File Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../2_dec_file_overview/21_usage_overview.html">
+            
+                <a href="../2_dec_file_overview/21_usage_overview.html#21-usage-overview">
+            
+                    
+                    2.1 Usage Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../2_dec_file_overview/22_declaration_file_format.html">
+            
+                <a href="../2_dec_file_overview/22_declaration_file_format.html#22-declaration-file-format">
+            
+                    
+                    2.2 Declaration File Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../2_dec_file_overview/23_edk_ii_dec_format.html">
+            
+                <a href="../2_dec_file_overview/23_edk_ii_dec_format.html#23-edk-ii-dec-format">
+            
+                    
+                    2.3 EDK II DEC Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../2_dec_file_overview/24_[defines]_usage.html">
+            
+                <a href="../2_dec_file_overview/24_[defines]_usage.html#24-defines-usage">
+            
+                    
+                    2.4 [Defines] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../2_dec_file_overview/25_[includes]_usage.html">
+            
+                <a href="../2_dec_file_overview/25_[includes]_usage.html#25-includes-usage">
+            
+                    
+                    2.5 [Includes] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../2_dec_file_overview/26_[guids]_usage.html">
+            
+                <a href="../2_dec_file_overview/26_[guids]_usage.html#26-guids-usage">
+            
+                    
+                    2.6 [Guids] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../2_dec_file_overview/27_[protocols]_usage.html">
+            
+                <a href="../2_dec_file_overview/27_[protocols]_usage.html#27-protocols-usage">
+            
+                    
+                    2.7 [Protocols] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../2_dec_file_overview/28_[ppis]_usage.html">
+            
+                <a href="../2_dec_file_overview/28_[ppis]_usage.html#28-ppis-usage">
+            
+                    
+                    2.8 [Ppis] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../2_dec_file_overview/29_[libraryclasses]_usage.html">
+            
+                <a href="../2_dec_file_overview/29_[libraryclasses]_usage.html#29-libraryclasses-usage">
+            
+                    
+                    2.9 [LibraryClasses] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../2_dec_file_overview/210_pcd_usage.html">
+            
+                <a href="../2_dec_file_overview/210_pcd_usage.html#210-pcd-usage">
+            
+                    
+                    2.10 PCD Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../2_dec_file_overview/211_[userextensions]_usage.html">
+            
+                <a href="../2_dec_file_overview/211_[userextensions]_usage.html#211-userextensions-usage">
+            
+                    
+                    2.11 [UserExtensions] Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../3_edk_ii_dec_file_format/">
+            
+                <a href="../3_edk_ii_dec_file_format/#3-edk-ii-dec-file-format">
+            
+                    
+                    3 EDK II DEC File Format
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../3_edk_ii_dec_file_format/31_general_rules.html">
+            
+                <a href="../3_edk_ii_dec_file_format/31_general_rules.html#31-general-rules">
+            
+                    
+                    3.1 General Rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html">
+            
+                <a href="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html#32-package-declaration-dec-definitions">
+            
+                    
+                    3.2 Package Declaration (DEC) Definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3_edk_ii_dec_file_format/33_header_comment_section.html">
+            
+                <a href="../3_edk_ii_dec_file_format/33_header_comment_section.html#33-header-comment-section">
+            
+                    
+                    3.3 Header Comment Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../3_edk_ii_dec_file_format/34_[defines]_section.html">
+            
+                <a href="../3_edk_ii_dec_file_format/34_[defines]_section.html#34-defines-section">
+            
+                    
+                    3.4 [Defines] Section
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../3_edk_ii_dec_file_format/35_[includes]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/35_[includes]_sections.html#35-includes-sections">
+            
+                    
+                    3.5 [Includes] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../3_edk_ii_dec_file_format/36_[guids]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/36_[guids]_sections.html#36-guids-sections">
+            
+                    
+                    3.6 [Guids] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../3_edk_ii_dec_file_format/37_[protocols]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/37_[protocols]_sections.html#37-protocols-sections">
+            
+                    
+                    3.7 [Protocols] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../3_edk_ii_dec_file_format/38_[ppis]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/38_[ppis]_sections.html#38-ppis-sections">
+            
+                    
+                    3.8 [PPIs] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../3_edk_ii_dec_file_format/39_[libraryclasses]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/39_[libraryclasses]_sections.html#39-libraryclasses-sections">
+            
+                    
+                    3.9 [LibraryClasses] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../3_edk_ii_dec_file_format/310_pcd_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/310_pcd_sections.html#310-pcd-sections">
+            
+                    
+                    3.10 PCD Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../3_edk_ii_dec_file_format/311_[userextensions]_sections.html">
+            
+                <a href="../3_edk_ii_dec_file_format/311_[userextensions]_sections.html#311-userextensions-sections">
+            
+                    
+                    3.11 [UserExtensions] Sections
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./#appendix-a-dec-examples">
+            
+                    
+                    Appendix A DEC Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="a1_edk_ii_intelframeworkpkg_example.html">
+            
+                <a href="a1_edk_ii_intelframeworkpkg_example.html#a1-edk-ii-intelframeworkpkg-example">
+            
+                    
+                    A.1 EDK II IntelFrameworkPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="a2_edk_ii_emulatorpkg_example.html">
+            
+                <a href="a2_edk_ii_emulatorpkg_example.html#a2-edk-ii-emulatorpkg-example">
+            
+                    
+                    A.2 EDK II EmulatorPkg Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="a3_shellbinpkgdec.html">
+            
+                <a href="a3_shellbinpkgdec.html#a3-shellbinpkgdec">
+            
+                    
+                    A.3 ShellBinPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="a4_ueficpupkgdec.html">
+            
+                <a href="a4_ueficpupkgdec.html#a4-ueficpupkgdec">
+            
+                    
+                    A.4 UefiCpuPkg.dec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#appendix-b-edk-ii-module-types">
+            
+                    
+                    Appendix B EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Tables
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html">
+            
+                <a href="../3_edk_ii_dec_file_format/32_package_declaration_dec_definitions.html#table-1-macro-usages">
+            
+                    
+                    Table 1 MACRO Usages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../appendix_b_edk_ii_module_types.html">
+            
+                <a href="../appendix_b_edk_ii_module_types.html#table-2-edk-ii-module-types">
+            
+                    
+                    Table 2 EDK II Module Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >A.1 EDK II IntelFrameworkPkg Example</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 04:33:40]</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  A.1 EDK II IntelFrameworkPkg Example
+
+  Copyright (c) 2007-2017, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="a1-edk-ii-intelframeworkpkg-example">A.1 EDK II IntelFrameworkPkg Example</h2>
+<pre><code class="lang-ini">## @file
+# Intel Framework Module Package.
+#
+# This package contains the definitions and module implementation
+# which follows Intel EFI Framework Specification.
+#
+# Copyright (c) 2007 - 2016, Intel Corporation. All rights reserved.&lt;BR&gt;
+#
+# This program and the accompanying materials are licensed and made
+# available under the terms and conditions of the BSD License
+# which accompanies this distribution. The full text of the license may
+# be found at:
+# http://opensource.org/licenses/bsd-license.php
+#
+# THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN &quot;AS IS&quot; BASIS,
+# WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR
+# IMPLIED.
+#
+##
+[Defines]
+  DEC_SPECIFICATION = 0x00010019
+  PACKAGE_NAME      = IntelFrameworkModulePkg
+  PACKAGE_UNI_FILE  = IntelFrameworkModulePkg.uni
+  PACKAGE_GUID      = 88894582-7553-4822-B484-624E24B6DECF
+  PACKAGE_VERSION   = 0.92
+
+[Includes]
+  Include # Root include for the package
+
+[LibraryClasses]
+  ## @libraryclass Platform BDS library definition about platform
+  # specific behavior.
+  PlatformBdsLib|Include/Library/PlatformBdsLib.h
+  ## @libraryclass Generic BDS library definition, include the data
+  # structure and function.
+  GenericBdsLib|Include/Library/GenericBdsLib.h
+
+[Guids]
+  # IntelFrameworkModule package token space guid
+  # Include/Guid/IntelFrameworkModulePkgTokenSpace.h
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid = { 0xD3705011, 0xBC19,0x4af7, { 0xBE, 0x16, 0xF6, 0x80, 0x30, 0x37, 0x8C, 0x15 }}
+  ## GUID identifies Data Hub records logged by Status Code Runtime
+  # Protocol.
+  # Include/Guid/DataHubStatusCodeRecord.h
+  gEfiDataHubStatusCodeRecordGuid = { 0xD083E94C, 0x6560, 0x42E4, {0xB6, 0xD4, 0x2D, 0xF7, 0x5A, 0xDF, 0x6A, 0x2A }}
+  ## GUID indicates the tiano custom compress/decompress algorithm.
+  # Include/Guid/TianoDecompress.h
+  gTianoCustomDecompressGuid = { 0xA31280AD, 0x481E, 0x41B6,{ 0x95, 0xE8, 0x12, 0x7F, 0x4C, 0x98, 0x47, 0x79 }}
+  ## GUID indicates the LZMA custom compress/decompress algorithm.
+  # Include/Guid/LzmaDecompress.h
+  gLzmaCustomDecompressGuid = { 0xEE4E5898, 0x3914, 0x4259,{ 0x9D, 0x6E, 0xDC, 0x7B, 0xD7, 0x94, 0x03, 0xCF }}
+  ## Include/Guid/AcpiVariable.h
+  gEfiAcpiVariableCompatiblityGuid = { 0xc020489e, 0x6db2, 0x4ef2,{ 0x9a, 0xa5, 0xca, 0x6, 0xfc, 0x11, 0xd3, 0x6a }}
+  ## Include/Guid/LegacyBios.h
+  gEfiLegacyBiosGuid = { 0x2E3044AC, 0x879F, 0x490F,{ 0x97, 0x60, 0xBB, 0xDF, 0xAF, 0x69, 0x5F, 0x50 }}
+  ## Include/Guid/LegacyDevOrder.h
+  gEfiLegacyDevOrderVariableGuid = { 0xa56074db, 0x65fe, 0x45f7,{ 0xbd, 0x21, 0x2d, 0x2b, 0xdd, 0x8e, 0x96, 0x52 }}
+  ## Include/Guid/CapsuleDataFile.h
+  gEfiUpdateDataFileGuid = { 0x283fa2ee, 0x532c, 0x484d,{ 0x93, 0x83, 0x9f, 0x93, 0xb3, 0x6f, 0xb, 0x7e }}
+  ## Include/Guid/BlockIoVendor.h
+  gBlockIoVendorGuid = { 0xcf31fac5, 0xc24e, 0x11d2,{0x85, 0xf3, 0x0, 0xa0, 0xc9, 0x3e, 0xc9, 0x3b }}
+  ## Include/Guid/BdsHii.h
+  gFrontPageFormSetGuid     = { 0x9e0c30bc, 0x3f06, 0x4ba6,{0x82, 0x88, 0x9, 0x17, 0x9b, 0x85, 0x5d, 0xbe }}
+  gBootManagerFormSetGuid   = { 0x847bc3fe, 0xb974, 0x446d,{0x94, 0x49, 0x5a, 0xd5, 0x41, 0x2e, 0x99, 0x3b }}
+  gDeviceManagerFormSetGuid = { 0x3ebfa8e6, 0x511d, 0x4b5b,{0xa9, 0x5f, 0xfb, 0x38, 0x26, 0xf, 0x1c, 0x27 }}
+  gDriverHealthFormSetGuid  = { 0xf76e0a70, 0xb5ed, 0x4c38,{0xac, 0x9a, 0xe5, 0xf5, 0x4b, 0xf1, 0x6e, 0x34 }}
+  gBootMaintFormSetGuid     = { 0x642237c7, 0x35d4, 0x472d,{0x83, 0x65, 0x12, 0xe0, 0xcc, 0xf2, 0x7a, 0x22 }}
+  gFileExploreFormSetGuid   = { 0x1f2d63e1, 0xfebd, 0x4dc7,{0x9c, 0xc5, 0xba, 0x2b, 0x1c, 0xef, 0x9c, 0x5b }}
+  ## Include/Guid/BdsLibHii.h
+  gBdsLibStringPackageGuid = { 0x3b4d9b23, 0x95ac, 0x44f6,{0x9f, 0xcd, 0xe, 0x95, 0x94, 0x58, 0x6c, 0x72 }}
+  ## Include/Guid/LastEnumLang.h
+  gLastEnumLangGuid = { 0xe8c545b, 0xa2ee, 0x470d,{0x8e, 0x26, 0xbd, 0xa1, 0xa1, 0x3c, 0xa, 0xa3 }}
+  ## Include/Guid/HdBootVariable.h
+  gHdBootDevicePathVariablGuid = { 0xfab7e9e1, 0x39dd, 0x4f2b,{0x84, 0x8, 0xe2, 0xe, 0x90, 0x6c, 0xb6, 0xde }}
+
+[Protocols]
+  ## Vga Mini port binding for a VGA controller
+  # Include/Protocol/VgaMiniPort.h
+  gEfiVgaMiniPortProtocolGuid = { 0xc7735a2f, 0x88f5, 0x4882,{ 0xae, 0x63, 0xfa, 0xac, 0x8c, 0x8b, 0x86, 0xb3 }}
+  ## ISA I/O Protocol is used to perform ISA device Io/Mem operations.
+  # Include/Protocol/IsaIo.h
+  gEfiIsaIoProtocolGuid = { 0x7ee2bd44, 0x3da0, 0x11d4,{ 0x9a, 0x38, 0x0, 0x90, 0x27, 0x3f, 0xc1, 0x4d }}
+  ## ISA Acpi Protocol is used to operate and communicate with ISA
+  # device.
+  # Include/Protocol/IsaAcpi.h
+  gEfiIsaAcpiProtocolGuid = { 0x64a892dc, 0x5561, 0x4536,{ 0x92, 0xc7, 0x79, 0x9b, 0xfc, 0x18, 0x33, 0x55 }}
+  ## PS/2 policy protocol abstracts the specific platform initialization
+  # and setting.
+  # Include/Protocol/Ps2Policy.h
+  gEfiPs2PolicyProtocolGuid = { 0x4DF19259, 0xDC71, 0x4D46,{ 0xBE, 0xF1, 0x35, 0x7B, 0xB5, 0x78, 0xC4, 0x18 }}
+  ## OEM Badging Protocol defines the interface to get the OEM badging
+  # image with the dispaly attribute.
+  # Include/Protocol/OEMBadging.h
+  gEfiOEMBadgingProtocolGuid = { 0x170E13C0, 0xBF1B, 0x4218,{ 0x87, 0x1D, 0x2A, 0xBD, 0xC6, 0xF8, 0x87, 0xBC }}
+  ## Include/Protocol/ExitPmAuth.h
+  gExitPmAuthProtocolGuid = { 0xd088a413, 0xa70, 0x4217,{ 0xba, 0x55, 0x9a, 0x3c, 0xb6, 0x5c, 0x41, 0xb3 }}
+
+#
+# [Error.gEfiIntelFrameworkModulePkgTokenSpaceGuid]
+# 0x80000001 | Invalid value provided.
+# 0x80000002 | Reserved bits must be set to zero.
+#
+[PcdsFeatureFlag]
+  ## Indicates if OEM device is enabled as StatusCode report device.
+  # It is only used in Framework StatusCode implementation. &lt;BR&gt;&lt;BR&gt;
+  # TRUE - Enable OEM device.&lt;BR&gt;
+  # FALSE - Disable OEM device.&lt;BR&gt;
+  # @Prompt Report StatusCode via OEM Device.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdStatusCodeUseOEM|FALSE|BOOLEAN|0x00010024
+  ## Indicates if StatusCode report is loged into DataHub.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Log StatusCode report into DataHub.&lt;BR&gt;
+  # FALSE - Does not log StatusCode report into DataHub.&lt;BR&gt;
+  # @Prompt Log StatusCode into DataHub.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdStatusCodeUseDataHub|FALSE|BOOLEAN|0x00010029
+  ## Indicates if Serial device uses half hand shake.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Serial device uses half hand shake.&lt;BR&gt;
+  # FALSE - Serial device doesn&apos;t use half hand shake.&lt;BR&gt;
+  # @Prompt Enable Serial device Half Hand Shake.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdIsaBusSerialUseHalfHandshake|FALSE|BOOLEAN|0x00010043
+  ## Indicates if Legacy support is needed for ACPI S3 Save.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Support Legacy OS with S3 boot.&lt;BR&gt;
+  # FALSE - Does not support Legacy OS with S3 boot.&lt;BR&gt;
+  # @Prompt Turn on Legacy Support in S3 Boot.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformCsmSupport|TRUE|BOOLEAN|0x00010044
+  ## Indicates if PS2 keyboard does a extended verification during start.
+  # Extended verification will take some performance. It can be set to
+  # FALSE for boot performance.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Turn on PS2 keyboard extended verification.&lt;BR&gt;
+  # FALSE - Turn off PS2 keyboard extended verification.&lt;BR&gt;
+  # @Prompt Turn on PS2 Keyboard Extended Verification.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPs2KbdExtendedVerification|TRUE|BOOLEAN|0x00010045
+  ## Indicates if Framework Acpi Support protocol is installed.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Install Framework Acpi Support protocol.&lt;BR&gt;
+  # FALSE - Doesn&apos;t install Framework Acpi Support protocol.&lt;BR&gt;
+  # @Prompt Enable Framework Acpi Support.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdInstallAcpiSupportProtocol|TRUE|BOOLEAN|0x00010046
+  ## Indicates if PS2 mouse does a extended verification during start.
+  # Extended verification will take some performance. It can be set to
+  # FALSE for boot performance.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Turn on PS2 mouse extended verification. &lt;BR&gt;
+  # FALSE - Turn off PS2 mouse extended verification. &lt;BR&gt;
+  # @Prompt Turn on PS2 Mouse Extended Verification
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPs2MouseExtendedVerification|TRUE|BOOLEAN|0x00010047
+  ## Indicates if only Boot logo is showed and all message output is
+  # disabled in BDS.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Only Boot Logo is showed in boot.&lt;BR&gt;
+  # FALSE - All messages and Boot Logo are showed in boot.&lt;BR&gt;
+  # @Prompt Enable Boot Logo only.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdBootlogoOnlyEnable|FALSE|BOOLEAN|0x00010048
+
+[PcdsFixedAtBuild, PcdsPatchableInModule]
+  ## FFS filename to find the default BMP Logo file.
+  # @Prompt FFS Name of Boot Logo File.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLogoFile |{ 0x99, 0x8b,0xB2, 0x7B, 0xBB, 0x61, 0xD5, 0x11, 0x9A, 0x5D, 0x00, 0x90, 0x27,0x3F, 0xC1, 0x4D }|VOID*|0x40000003
+  ## FFS filename to find the shell application.
+  # @Prompt FFS Name of Shell Application.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdShellFile|{ 0xB7, 0xD6,0x7A, 0xC5, 0x15, 0x05, 0xA8, 0x40, 0x9D, 0x21, 0x55, 0x16,0x52, 0x85, 0x4E, 0x37 }|VOID*|0x40000004
+  ## ISA Bus features to support DMA, SlaveDMA and ISA Memory. &lt;BR&gt;&lt;BR&gt;
+  # BIT0 indicates if DMA is supported&lt;BR&gt;
+  # BIT1 indicates if only slave DMA is supported&lt;BR&gt;
+  # BIT2 indicates if ISA memory is supported&lt;BR&gt;
+  # Other BITs are reseved and must be zero.
+  # If more than one features are supported, the different BIT will be
+  # enabled at the same time.
+  # @Prompt ISA Bus Features.
+  # @Expression 0x80000002 |(gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdIsaBusSupportedFeatures &amp; 0xF8) == 0
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdIsaBusSupportedFeatures|0x05|UINT8|0x00010040
+
+[PcdsDynamic, PcdsDynamicEx]
+  ## Indicates if the machine has completed one boot cycle before.
+  # After the complete boot, BootState will be set to FALSE.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - The complete boot cycle has not happened before.&lt;BR&gt;
+  # FALSE - The complete boot cycle has happened before.&lt;BR&gt;
+  # @Prompt Boot State Flag.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdBootState|TRUE|BOOLEAN|0x0001002f
+  ## Timeout value for displaying progressing bar in before boot OS.
+  # According to UEFI 2.0 spec, the default TimeOut should be 0xffff.
+  # This PCD should be set as HII type PCD by platform integrator mapped
+  # to UEFI global variable L&quot;TimeOut&quot;.
+  # @Prompt Boot Timeout (s).
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdPlatformBootTimeOut|0xffff|UINT16|0x40000001
+  ## Error level for hardware recorder.
+  # If value 0, platform does not support feature of hardware error
+  # record.
+  # This PCD should be set as HII type PCD by platform integrator mapped
+  # to UEFI global variable L&quot;HwErrRecSupport&quot;.
+  # @Prompt Error Level For Hardware Recorder.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdHardwareErrorRecordLevel|0|UINT16|0x40000002
+
+[PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
+  # The 4 PCDs below are used to specify the video resolution and text
+  # mode of text setup.
+  # To make text setup work in this resolution,
+  # PcdVideoHorizontalResolution, PcdVideoVerticalResolution,
+  # PcdConOutColumn and PcdConOutRow in MdeModulePkg.dec should be
+  # created as PcdsDynamic or PcdsDynamicEx
+  # in platform DSC file. Then BDS setup will update these PCDs defined
+  # in MdeModulePkg.dec and reconnect console drivers (GraphicsConsole,
+  # Terminal, Consplitter) to make the video resolution and text mode
+  # work for text setup.
+  ## Specify the video horizontal resolution of text setup.
+  # @Prompt Video Horizontal Resolution of Text Setup.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|800|UINT32|0x50000001
+  ## Specify the video vertical resolution of text setup.
+  # @Prompt Video Vertical Resolution of Text Setup.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|600|UINT32|0x50000002
+  ## Specify the console output column of text setup.
+  # @Prompt Console Output Column of Text Setup.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdSetupConOutColumn|80|UINT32|0x50000003
+  ## Specify the console output row of text setup.
+  # @Prompt Console Output Row of Text Setup.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdSetupConOutRow|25|UINT32|0x50000004
+
+[PcdsFixedAtBuild, PcdsDynamic, PcdsDynamicEx, PcdsPatchableInModule]
+  # I/O Base address of floppy device controller.
+  # @Prompt I/O Base Address of Floppy Device Controller.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdFdcBaseAddress|0x3f0|UINT16|0x30000000
+  ## Indicates if BiosVideo driver will switch to 80x25 Text VGA Mode
+  # when exiting boot service.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Switch to Text VGA Mode.&lt;BR&gt;
+  # FALSE - Does not switch to Text VGA Mode.&lt;BR&gt;
+  # @Prompt Switch to Text VGA Mode on UEFI Boot.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdBiosVideoSetTextVgaModeEnable|FALSE|BOOLEAN|0x30000001
+  ## Indicates if BiosVideo driver will check for VESA BIOS Extension
+  # service support.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Check for VESA BIOS Extension service.&lt;BR&gt;
+  # FALSE - Does not check for VESA BIOS Extension service.&lt;BR&gt;
+  # @Prompt Enable Check for VESA BIOS Extension Service.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdBiosVideoCheckVbeEnable|TRUE|BOOLEAN|0x30000002
+  ## Indicates if BiosVideo driver will check for VGA service support.
+  # NOTE: If both PcdBiosVideoCheckVbeEnable and
+  # PcdBiosVideoCheckVgaEnable are set to FALSE,
+  # that means Graphics Output protocol will not be installed, the VGA
+  # miniport protocol will be installed instead.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Check for VGA service.&lt;BR&gt;
+  # FALSE - Does not check for VGA service.&lt;BR&gt;
+  # @Prompt Enable Check for VGA Service.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdBiosVideoCheckVgaEnable|TRUE|BOOLEAN|0x30000003
+  ## Indicates if memory space for legacy region will be set as
+  # cacheable.&lt;BR&gt;&lt;BR&gt;
+  # TRUE - Set cachebility for legacy region.&lt;BR&gt;
+  # FALSE - Does not set cachebility for legacy region.&lt;BR&gt;
+  # @Prompt Enable Cachebility for Legacy Region.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLegacyBiosCacheLegacyRegion|TRUE|BOOLEAN|0x00000004
+  ## Specify memory size with bytes to reserve EBDA below 640K for OPROM.
+  ## The value should be a multiple of 4KB.
+  # @Prompt Reserved EBDA Memory Size.
+  # @Expression 0x80000001 |(gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdEbdaReservedMemorySize&lt; 0xA0000) AND((gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdEbdaReservedMemorySize&amp; 0x1000) == 0)
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdEbdaReservedMemorySize|0x8000|UINT32|0x30000005
+  ## Specify memory size with page number for a pre-allocated ACPI NVS
+  # memory to be used
+  # by PEI in S3 phase. The default size 32K. When changing the value of
+  # this PCD, the platform developer should make sure the memory size is
+  # large enough to meet PEI requiremnt in S3 phase.
+  # @Prompt Reserved S3 Boot ACPI Memory Size.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdS3AcpiReservedMemorySize|0x8000|UINT32|0x30000006
+  ## Specify memory size for boot script executor stack usage in S3
+  # phase.
+  # The default size 32K. When changing the value of this PCD, the
+  # platform developer should make sure the memory size is large enough
+  # to meet boot script executor requiremnt in S3 phase.
+  # @Prompt Reserved S3 Boot Script Stack ACPI Memory Size.
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdS3BootScriptStackSize|0x8000|UINT32|0x30000007
+  ## Specify the end of address below 1MB for the OPROM.
+  # The last shadowed OpROM should not exceed this address.
+  # @Prompt Top Address of Shadowed Legacy OpROM.
+  # @Expression 0x80000001 |gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdEndOpromShadowAddress&lt; 0x100000
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdEndOpromShadowAddress|0xdffff|UINT32|0x30000008
+  ## Specify the low PMM (Post Memory Manager) size with bytes below 1MB.
+  # The value should be a multiple of 4KB.
+  # @Prompt Low PMM (Post Memory Manager) Size.
+  # @Expression 0x80000001 |(gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLowPmmMemorySize &lt;
+  0x100000) AND((gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLowPmmMemorySize &amp;0x1000) = = 0)
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdLowPmmMemorySize|0x10000|UINT32|0x30000009
+  ## Specify the high PMM (Post Memory Manager) size with bytes above 1MB.
+  # The value should be a multiple of 4KB.
+  # @Prompt High PMM (Post Memory Manager) Size.
+  # @Expression 0x80000001 |(gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdHighPmmMemorySize &amp;0x1000) == 0
+  gEfiIntelFrameworkModulePkgTokenSpaceGuid.PcdHighPmmMemorySize|0x400000|UINT32|0x3000000a
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Package Declaration (DEC) File Format Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 04:33:40]</div>
+        <div style="text-align:right">Revision 1.27</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="./#appendix-a-dec-examples" class="navigation navigation-prev " aria-label="Previous page: Appendix A DEC Examples">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="a2_edk_ii_emulatorpkg_example.html#a2-edk-ii-emulatorpkg-example" class="navigation navigation-next " aria-label="Next page: A.2 EDK II EmulatorPkg Example">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"A.1 EDK II IntelFrameworkPkg Example","level":"1.5.1","depth":2,"next":{"title":"A.2 EDK II EmulatorPkg Example","level":"1.5.2","depth":2,"anchor":"#a2-edk-ii-emulatorpkg-example","path":"appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.md","ref":"appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.md#a2-edk-ii-emulatorpkg-example","articles":[]},"previous":{"title":"Appendix A DEC Examples","level":"1.5","depth":1,"anchor":"#appendix-a-dec-examples","path":"appendix_a_dec_examples/README.md","ref":"appendix_a_dec_examples/README.md#appendix-a-dec-examples","articles":[{"title":"A.1 EDK II IntelFrameworkPkg Example","level":"1.5.1","depth":2,"anchor":"#a1-edk-ii-intelframeworkpkg-example","path":"appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.md","ref":"appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.md#a1-edk-ii-intelframeworkpkg-example","articles":[]},{"title":"A.2 EDK II EmulatorPkg Example","level":"1.5.2","depth":2,"anchor":"#a2-edk-ii-emulatorpkg-example","path":"appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.md","ref":"appendix_a_dec_examples/a2_edk_ii_emulatorpkg_example.md#a2-edk-ii-emulatorpkg-example","articles":[]},{"title":"A.3 ShellBinPkg.dec","level":"1.5.3","depth":2,"anchor":"#a3-shellbinpkgdec","path":"appendix_a_dec_examples/a3_shellbinpkgdec.md","ref":"appendix_a_dec_examples/a3_shellbinpkgdec.md#a3-shellbinpkgdec","articles":[]},{"title":"A.4 UefiCpuPkg.dec","level":"1.5.4","depth":2,"anchor":"#a4-ueficpupkgdec","path":"appendix_a_dec_examples/a4_ueficpupkgdec.md","ref":"appendix_a_dec_examples/a4_ueficpupkgdec.md#a4-ueficpupkgdec","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"EDK II Package Declaration (DEC) File Format Specification","version":"Revision 1.27"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appendix_a_dec_examples/a1_edk_ii_intelframeworkpkg_example.md","mtime":"2020-12-01T04:33:07.124Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T04:33:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
