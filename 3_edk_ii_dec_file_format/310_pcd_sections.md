@@ -128,7 +128,7 @@ PCDs listed in `PcdsFeatureFlag` sections must only be listed in
 <PcdStruct>       ::= <PcdName> <FS> <PtrVal> <FS> {<CName>} {<CArrayName>} <FS> <Token> "{" <EOL>
                       <TS> <PcdStructHF>
                       <TS> <PcdStructPKGs> "}" <CbOrEol>
-<PcdStructHF>     ::= "<HeaderFile>" <EOL> <PcdStructFile>
+<PcdStructHF>     ::= "<HeaderFiles>" <EOL> <PcdStructFile>
 <PcdStructPKGs>   ::= "<Packages>" <EOL> <PcdStructFile>*
 <PcdStructFile>   ::= <Filename> <EOL>
 <PcdPtr>          ::= <PcdName> <FS> <PcdPtrVal> <FS> <Token> <CbOrEol>
